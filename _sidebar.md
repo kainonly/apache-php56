@@ -1,4 +1,5 @@
 - [NGINX搭建](pages/nginx)
+- [NPM](pages/npm)
 - [ECC证书](pages/ecc)
 - [Iptable](pages/iptable)
 - [lessc](pages/lessc)
