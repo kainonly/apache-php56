@@ -2,13 +2,13 @@
 
 生成私密
 
-``` base
+``` shell
 openssl ecparam -genkey -name prime256v1 -out domain.key 
 ```
 
 生成指定证书
 
-``` base
+``` shell
 openssl req -new -sha256 -key domain.key -out domain_csr.txt
 ```
 
@@ -16,6 +16,6 @@ openssl req -new -sha256 -key domain.key -out domain_csr.txt
 
 生成公钥
 
-``` base
+``` shell
 openssl ec -in domain.key -pubout -out pubkey.pem
 ```

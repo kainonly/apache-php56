@@ -2,12 +2,12 @@
 
 安装 
 
-``` base
+``` shell
 npm install less less-plugin-clean-css
 ```
 
 自动压缩
 
-``` base
+``` shell
 lessc input.less output.css --clean-css="advanced"
 ```
