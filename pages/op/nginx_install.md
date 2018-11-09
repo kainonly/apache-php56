@@ -219,3 +219,151 @@ http {
 ```
 
 > 设置keep-alive客户端连接在服务器端保持开启的超时值
+
+最终 `nginx.conf` 配置是这样的
+
+```conf
+user nginx nginx;
+worker_processes auto;
+
+error_log /var/run/error.log info;
+pid /var/run/nginx.pid;
+lock_file /var/run/nginx.lock;
+
+events {
+	worker_connections 4096; 
+	accept_mutex off;
+}
+
+http {
+	include mime.types;
+	server_names_hash_bucket_size 64;
+	default_type application/octet-stream;
+	client_max_body_size 16m;
+	access_log off; 
+
+	aio threads;
+	sendfile on; 
+	sendfile_max_chunk 256k;
+
+	tcp_nopush on;
+	tcp_nodelay on;
+ 
+	gzip on; 
+	gzip_disable "MSIE [1-6].(?!.*SV1)";
+	gzip_http_version 1.1;
+	gzip_vary on;
+	gzip_proxied any;
+	gzip_min_length 1000;
+	gzip_buffers 16 8k;
+	gzip_comp_level 5;
+	gzip_types text/plain text/css text/xml text/javascript application/json application/x-javascript application/xml application/xml+rss;
+
+	log_format main $remote_addr - $remote_user [$time_local] "$request"  $status $body_bytes_sent "$http_referer"  "$http_user_agent" "$http_x_forwarded_for";
+ 
+	proxy_connect_timeout 5;
+	proxy_read_timeout 60;
+	proxy_send_timeout 5;
+	proxy_buffer_size 16k;
+	proxy_buffers 4 64k;
+	proxy_busy_buffers_size 128k;
+	proxy_temp_file_write_size 128k;
+	proxy_temp_path /var/cache/nginx/proxy_temp;
+
+	keepalive_timeout 5;
+
+	server {
+	    listen 80 default;
+	    return 404;
+	}
+ 
+	include vhost/**/*.conf;
+}
+```
+
+> 创建一个 `vhost` 目录来管理虚拟域名，`include vhost/**/*.conf;` 就是将该目录引入
+
+##### 6.设置虚拟域名
+
+> 虚拟域名我通常是放在 `vhost` 目录下，定义一个虚拟域名创建一个文件夹(可以将文件夹命名为域名)，其内部大概包含 `site.conf`、`site.crt`、`site.key`(子配置、证书、签名)
+
+例如：定义子配置
+
+```conf
+server {
+	listen  80;
+	server_name <域名>;
+	rewrite ^(.*)$  https://<域名>$1 permanent;
+}
+
+server {
+	listen 443 ssl http2;
+	listen [::]:443 ssl http2;
+	
+	server_name api.yelinvan.cc;
+	charset utf-8;
+	 
+	ssl_certificate <证书的绝对路径>;
+	ssl_certificate_key <签名的绝对路径>;
+	ssl_session_cache shared:SSL:20m;
+	ssl_session_timeout 10m;
+	ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+	ssl_prefer_server_ciphers on;
+	ssl_ciphers ECDH+AESGCM:ECDH+AES256:ECDH+AES128:DH+3DES:!ADH:!AECDH:!MD5;
+	 
+	root <虚拟目录路径>;
+	
+	location / {
+		aio threads=default;
+		index index.html <index.php>;
+        # proxy_pass http://127.0.0.1:<port>;
+	}
+	  
+	# location ~ \.php$ {
+	# 	fastcgi_pass 127.0.0.1:9000;
+	#	<fastcgi_pass unix:php-fpm.sock>;
+	# 	fastcgi_index index.php;
+	# 	fastcgi_split_path_info ^((?U).+\.php)(/?.+)$;
+	# 	fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+	# 	include fastcgi_params;
+	# }
+
+	error_page 404 403 /404.html;
+	error_page 500 502 503 504 /50x.html;
+}
+```
+
+##### 7.加入SYSTEMCTL
+
+创建文件 `/etc/systemd/system/nginx.service`
+
+```ini
+[Unit]
+Description=The NGINX HTTP and reverse proxy server
+After=syslog.target network.target remote-fs.target nss-lookup.target
+
+[Service]
+Type=forking
+PIDFile=/run/nginx.pid
+ExecStartPre=/usr/sbin/nginx -t
+ExecStart=/usr/sbin/nginx
+ExecReload=/usr/sbin/nginx -s reload
+ExecStop=/bin/kill -s QUIT $MAINPID
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
+```
+
+启动nginx
+
+```shell
+# systemctl start nginx
+```
+
+加入开机启动
+
+```shell
+# systemctl enable nginx
+```
+
