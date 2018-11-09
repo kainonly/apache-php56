@@ -1,6 +1,2 @@
-- [NGINX搭建](pages/nginx)
-- [NPM](pages/npm)
-- [ECC证书](pages/ecc)
-- [Iptable](pages/iptable)
-- [lessc](pages/lessc)
-- [PostgreSQL](pages/pgsql)
+* 运维技术
+    * [NGINX 部署](pages/op/nginx_install)
