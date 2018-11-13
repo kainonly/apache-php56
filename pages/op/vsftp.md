@@ -1,4 +1,4 @@
-## vsftpd 部署
+## Vsftpd 部署
 
 在 `centos` 下通过 `yum` 安装
 

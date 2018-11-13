@@ -1,4 +1,4 @@
-* 前端技术
+<!-- * 前端技术
     * [H5 WebApi](pages/front/webapi)
     * [ES6 常用技巧](pages/front/es6)
     * [Angular 开发记录](pages/front/angular)
@@ -7,13 +7,13 @@
     * [Cordova 自定义插件](pages/front/cordova_plugin)
     * [PouchDB 笔记汇总](pages/front/pouchdb)
     * [Electron 笔记汇总](pages/front/electron)
-    * [Service Work](pages/front/service_work)
+    * [Service Work](pages/front/service_work) -->
 * 后端技术
     * [Linux 常用命令](pages/op/linux)
     * [NGINX 部署](pages/op/nginx_install)
     * [PHP-FPM 部署](pages/op/php-fpm_install)
     * [解决 SSH频繁掉线](pages/op/ssh_disconnect)
-    * [Iptable 基本使用](pages/op/iptable)
+    * [Iptable 使用](pages/op/iptable)
     * [MariaDB 优化](pages/db/mariadb)
     * [PostgreSQL 优化](pages/db/pgsql_ext)
     * [RabbitMQ 优化](pages/service/rabbitmq)
@@ -23,4 +23,4 @@
     * [vsftpd 部署](pages/op/vsftp)
     * [smb 部署](pages/op/smb)
     * [Github 使用 SSH](pages/other/git_ssh)
-    * [自定义证书](pages/other/cert)
+    * [OpenSSL 使用](pages/other/openssl)

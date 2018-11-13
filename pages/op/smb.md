@@ -1,4 +1,4 @@
-## smb 部署
+## SMB 部署
 
 开放端口
 
@@ -243,4 +243,4 @@ allwo hosts = 网段 except IP
 deny hosts------设定只有此网段/IP的用户不能访问共享资源
 allow hosts=本网段指定IP指定IP
 deny hosts=指定IP本网段指定I
-``` 
+```
