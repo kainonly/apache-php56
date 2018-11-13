@@ -1,4 +1,4 @@
-## 解决 SSH频繁掉线
+## SSH 频繁掉线
 
 找到文件 `/etc/ssh/sshd_config` 进行修改
 

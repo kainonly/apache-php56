@@ -1,4 +1,4 @@
-## Github 使用密钥
+## Github 密钥
 
 设置 `git` 的 `user.name` 和 `user.email`
 
