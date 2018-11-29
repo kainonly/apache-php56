@@ -1,28 +1,24 @@
-* 前端技术
-    <!-- * [H5 WebApi](pages/front/webapi)
-    * [ES6 常用技巧](pages/front/es6)
-    * [Angular 开发记录](pages/front/angular)
-    * [RxJS 笔记汇总](pages/front/rxjs) -->
-    * [Ionic 开发记录](pages/front/ionic)
-    * [Cordova 自定义插件](pages/front/plugman)
-    <!-- * [PouchDB 笔记汇总](pages/front/pouchdb) -->
-    <!-- * [Electron 笔记汇总](pages/front/electron) -->
-    <!-- * [Service Work](pages/front/service_work) -->
-* 后端技术
-    * [Docker 使用](pages/op/docker)
-    * [Linux 常用命令](pages/op/linux)
-    * [NGINX 部署](pages/op/nginx_install)
-    * [PHP-FPM 部署](pages/op/php-fpm_install)
-    * [SSH 频繁掉线](pages/op/ssh_disconnect)
-    * [Iptable 使用](pages/op/iptable)
-    * [MariaDB 优化](pages/db/mariadb)
-    * [RabbitMQ 优化](pages/service/rabbitmq)
-    * [PostgreSQL 笔记](pages/db/pgsql)
-    * [MongoDB 笔记](pages/db/mongodb)
-    * [Redis 故障](pages/op/redis_rdb)
-    <!-- * [CouchDB 部署](pages/db/couchdb) -->
-    * [Vsftpd 部署](pages/op/vsftp)
-    * [SMB 部署](pages/op/smb)
-* 工具
-    * [OpenSSL 使用](pages/other/openssl)
-    * [Github 密钥](pages/other/git_ssh)
+* 开发技术
+    * [Ionic 记录](pages/dev/ionic)
+    * [自定义 Cordova 插件](pages/dev/plugman)
+* 部署方案
+    * [Docker 容器](pages/deploy/docker)
+    * [Kubernets 集群](pages/deploy/k8s)
+    * [NGINX 编译](pages/deploy/nginx)
+    * [PHP-FPM 编译](pages/deploy/php-fpm)
+    * [FTP 配置之 Vsftpd](pages/deploy/vsftp)
+    * [共享协议 SMB](pages/deploy/smb)
+* 优化服务
+    * [MySQL & MariaDB](pages/service/mysql_mariadb)
+    * [RabbitMQ](pages/service/rabbitmq)
+    * [PostgreSQL](pages/service/pgsql)
+    * [MongoDB](pages/service/mongodb)
+    * [CouchDB](pages/service/couchdb)
+* 命令工具
+    * [Linux 命令](pages/shell/linux)
+    * [Iptable 规则](pages/shell/iptable)
+    * [OpenSSL](pages/shell/openssl)
+    * [Github 密钥](pages/shell/git_ssh)
+* 故障记录
+    * [SSH 频繁掉线](pages/note/ssh_disconnect)
+    * [Redis 故障](pages/note/redis_rdb)

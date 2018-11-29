@@ -1,4 +1,4 @@
-## PostgreSQL 笔记
+## PostgreSQL
 
 安装 UUID 扩展安装
 

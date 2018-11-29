@@ -1,4 +1,4 @@
-## PHP-FPM 部署
+## PHP-FPM 编译
 
 适用于 `centos`、`debain` 与 `ubuntu` 系统进行编译安装与部署
 
