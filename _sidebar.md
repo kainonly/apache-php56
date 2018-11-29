@@ -17,7 +17,7 @@
     * [Iptable 使用](pages/op/iptable)
     * [MariaDB 优化](pages/db/mariadb)
     * [RabbitMQ 优化](pages/service/rabbitmq)
-    * [PostgreSQL 笔记](pages/db/pgsql_ext)
+    * [PostgreSQL 笔记](pages/db/pgsql)
     * [MongoDB 笔记](pages/db/mongodb)
     * [Redis 故障](pages/op/redis_rdb)
     <!-- * [CouchDB 部署](pages/db/couchdb) -->
