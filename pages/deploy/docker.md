@@ -25,6 +25,42 @@
 - --link=[]: 添加链接到另一个容器
 - --expose=[]: 开放一个端口或一组端口
 
+启动一个或多个已经被停止的容器
+
+```shell
+# docker start [OPTIONS] CONTAINER [CONTAINER...]
+```
+
+停止一个运行中的容器
+
+```shell
+# docker stop [OPTIONS] CONTAINER [CONTAINER...]
+```
+
+重启容器
+
+```shell
+# docker restart [OPTIONS] CONTAINER [CONTAINER...]
+```
+
+杀掉一个运行中的容器
+
+```shell
+# docker kill [OPTIONS] CONTAINER [CONTAINER...]
+```
+
+- -s :向容器发送一个信号
+
+删除一个或多少容器
+
+```shell
+# docker rm [OPTIONS] CONTAINER [CONTAINER...]
+```
+
+- -f :通过SIGKILL信号强制删除一个运行中的容器
+- -l :移除容器间的网络连接，而非容器本身
+- -v :-v 删除与容器关联的卷
+
 #### 国官方镜像加速
 
 为了永久性保留更改，您可以修改 /etc/docker/daemon.json 文件并添加上 registry-mirrors 键值
