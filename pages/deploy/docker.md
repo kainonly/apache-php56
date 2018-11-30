@@ -21,9 +21,9 @@
 - `--env-file=[]`: 从指定文件读入环境变量
 - `--cpuset="0-2" or --cpuset="0,1,2"`: 绑定容器到指定CPU运行
 - `-m`: 设置容器使用内存最大值
-- --net="bridge": 指定容器的网络连接类型，支持 bridge/host/none/container: 四种类型
-- --link=[]: 添加链接到另一个容器
-- --expose=[]: 开放一个端口或一组端口
+- `--net="bridge"`: 指定容器的网络连接类型，支持 `bridge` `host` `none` `container`
+- `--link=[]`: 添加链接到另一个容器
+- `--expose=[]`: 开放一个端口或一组端口
 
 ##### - 启动一个或多个已经被停止的容器
 
@@ -49,7 +49,7 @@
 # docker kill [OPTIONS] CONTAINER [CONTAINER...]
 ```
 
-- -s :向容器发送一个信号
+- `-s` :向容器发送一个信号
 
 ##### - 删除一个或多少容器
 
@@ -57,9 +57,9 @@
 # docker rm [OPTIONS] CONTAINER [CONTAINER...]
 ```
 
-- -f :通过SIGKILL信号强制删除一个运行中的容器
-- -l :移除容器间的网络连接，而非容器本身
-- -v :-v 删除与容器关联的卷
+- `-f` :通过SIGKILL信号强制删除一个运行中的容器
+- `-l` :移除容器间的网络连接，而非容器本身
+- `-v` :-v 删除与容器关联的卷
 
 ##### - 暂停容器中所有的进程
 
@@ -85,13 +85,13 @@
 # docker exec [OPTIONS] CONTAINER COMMAND [ARG...]
 ```
 
-- -d :分离模式: 在后台运行
-- -i :即使没有附加也保持STDIN 打开
-- -t :分配一个伪终端
+- `-d` :分离模式: 在后台运行
+- `-i` :即使没有附加也保持STDIN 打开
+- `-t` :分配一个伪终端
 
 #### 国官方镜像加速
 
-为了永久性保留更改，您可以修改 /etc/docker/daemon.json 文件并添加上 registry-mirrors 键值
+为了永久性保留更改，可以修改 `/etc/docker/daemon.json` 文件并添加上 registry-mirrors 键值
 
 ``` json
 {
