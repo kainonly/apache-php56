@@ -138,6 +138,37 @@
 - `--since`：从指定的时间戳后显示所有事件
 - `--until`：流水时间显示到指定的时间为止
 
+获取容器的日志
+
+```shell
+# docker logs [OPTIONS] CONTAINER
+```
+
+- `-f`: 跟踪日志输出
+- `--since`: 显示某个开始时间的所有日志
+- `-t`: 显示时间戳
+- `--tail`: 仅列出最新N条容器日志
+
+阻塞运行直到容器停止
+
+```shell
+# docker wait [OPTIONS] CONTAINER [CONTAINER...]
+```
+
+将文件系统作为一个tar归档文件导出到STDOUT
+
+```shell
+# docker export [OPTIONS] CONTAINER
+```
+
+- `-o`: 将输入内容写到文件
+
+列出指定的容器的端口映射
+
+```shell
+# docker port [OPTIONS] CONTAINER [PRIVATE_PORT[/PROTO]]
+```
+
 #### 国官方镜像加速
 
 为了永久性保留更改，可以修改 `/etc/docker/daemon.json` 文件并添加上 registry-mirrors 键值
