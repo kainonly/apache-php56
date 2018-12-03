@@ -116,6 +116,28 @@
 - `-s`: 显示总的文件大小。
 - `--type`: 为指定类型返回JSON。
 
+查看容器中运行的进程信息
+
+```shell
+# docker top [OPTIONS] CONTAINER [ps OPTIONS]
+```
+
+连接到正在运行中的容器
+
+```shell
+# docker attach [OPTIONS] CONTAINER
+```
+
+从服务器获取实时事件
+
+```shell
+# docker events [OPTIONS]
+```
+
+- `-f`：根据条件过滤事件
+- `--since`：从指定的时间戳后显示所有事件
+- `--until`：流水时间显示到指定的时间为止
+
 #### 国官方镜像加速
 
 为了永久性保留更改，可以修改 `/etc/docker/daemon.json` 文件并添加上 registry-mirrors 键值
