@@ -19,6 +19,7 @@
     * [Iptable 规则](pages/shell/iptable)
     * [OpenSSL](pages/shell/openssl)
     * [Github 密钥](pages/shell/git_ssh)
+    * [终端走代理](pages/shell/proxy)
 * 故障记录
     * [SSH 频繁掉线](pages/note/ssh_disconnect)
     * [Redis 故障](pages/note/redis_rdb)
