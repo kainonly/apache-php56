@@ -1,6 +1,7 @@
 * 开发技术
     * [Ionic 记录](pages/dev/ionic)
     * [自定义 Cordova 插件](pages/dev/plugman)
+    * [VSCode 常用插件](pages/dev/vscode)
 * 部署方案
     * [Docker 容器](pages/deploy/docker)
     * [Kubernets 集群](pages/deploy/k8s)
