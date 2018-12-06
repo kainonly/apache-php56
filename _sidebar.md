@@ -4,7 +4,7 @@
     * [VSCode 常用插件](pages/dev/vscode)
 * 部署方案
     * [Docker 容器](pages/deploy/docker)
-    * [Kubernets 集群](pages/deploy/k8s)
+    <!-- * [Kubernets 集群](pages/deploy/k8s) -->
     * [NGINX 编译](pages/deploy/nginx)
     * [PHP-FPM 编译](pages/deploy/php-fpm)
     * [FTP 配置之 Vsftpd](pages/deploy/vsftp)
