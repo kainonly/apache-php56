@@ -1,7 +1,7 @@
 ## PostgreSQL
 
-安装 UUID 扩展安装
+POSTGRESQL 扩展
 
-```sql
-create extension "uuid-ossp";
-```
+| EXTEND NAME | SQL                           |
+| ----------- | ----------------------------- |
+| UUID        | create extension "uuid-ossp"; |
