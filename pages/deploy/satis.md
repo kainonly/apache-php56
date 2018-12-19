@@ -11,8 +11,13 @@
 ```json
 {
 	"name": "My Repository",
+	"homepage": "http://localhost:8001",
+	"repositories": [ { "type": "composer", "url": "https://packagist.laravel-china.org" } ],
+	"require-all": false,
 	"require": {
 		"topthink/think": "5.1.*",
+		"topthink/think-captcha": "^2.0",
+		"topthink/think-image":"^1.0",
 		"overtrue/wechat": "~4.0",
 		"aliyuncs/oss-sdk-php": "^2.3",
 		"phpseclib/phpseclib": "^2.0",
