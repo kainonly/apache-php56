@@ -6,6 +6,13 @@
 # composer create-project composer/satis --keep-vcs
 ```
 
+删除默认 composer.lock，重新安装依赖
+
+```shell
+# composer install
+# composer dump-autoload --optimize
+```
+
 配置 satis.json
 
 ```json
@@ -34,10 +41,11 @@
 
 - `homepage` 在satis上显示的默认私有镜像地址
 - `repositories` 需要被索引的git代码仓库地址
-- `require` 明确定义包名可以减少索引内容中使用require-all经过测试发现会索引全网的php包
+- `require-all` 索引全网的php包
+- `require` 明确定义包名可以减少索引内容中使用
 
 对镜像中的 packages 创建索引
 
 ```shell
-# php bin/satis build satis.json ./web -v
+# php bin/satis build satis.json ./public
 ```
