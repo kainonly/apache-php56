@@ -19,7 +19,13 @@
 {
 	"name": "My Repository",
 	"homepage": "http://localhost:8001",
-	"repositories": [ { "type": "composer", "url": "https://packagist.laravel-china.org" } ],
+	"repositories": [
+		{ "type": "composer", "url": "https://packagist.laravel-china.org" },
+		{
+            "type": "vcs",
+            "url": "git@github.com:kainonly/anyone.git"
+        }
+	],
 	"require-all": false,
 	"require": {
 		"topthink/think": "5.1.*",
@@ -34,7 +40,8 @@
 		"nesbot/carbon": "^2.5",
 		"php-amqplib/php-amqplib": "^2.8",
 		"ajaxray/short-code": "^1.1",
-		"ramsey/uuid": "^3.8"
+		"ramsey/uuid": "^3.8",
+		"kain/anyone":"^1.0"
 	}
 }
 ```
@@ -44,8 +51,9 @@
 - `require-all` 索引全网的php包
 - `require` 明确定义包名可以减少索引内容中使用
 
-对镜像中的 packages 创建索引
+创建索引
 
 ```shell
 # php bin/satis build satis.json ./public
 ```
+
