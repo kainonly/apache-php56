@@ -57,3 +57,32 @@
 # php bin/satis build satis.json ./public
 ```
 
+在项目初始 package.json，name:satis-server，并安装 `browser-sync`
+
+```shell
+# npm init
+# npm install browser-sync --save
+```
+
+创建js文件：satis-server.js
+
+```js
+const bs = require('browser-sync').create();
+
+bs.init({
+	host: '127.0.0.1',
+	ui: false,
+	watch: true,
+	server: './public',
+	port: 8001,
+	browser: []
+});
+```
+
+使用 pm2 守护运行
+
+```shell
+# pm2 start satis-server.js
+# pm2 save
+# pm2 startup
+```
