@@ -1,5 +1,15 @@
 ## 终端走代理
 
+### Window 平台
+
+使用管理员打开 `powershell`，在终端中手动执行
+
+```
+# netsh winhttp set proxy "127.0.0.1:1080"
+```
+
+### Linux 平台
+
 #### 方法 1
 
 在终端中直接运行命令
@@ -99,3 +109,11 @@ socks5 127.0.0.1 1080
 proxychains4 wget http://xxx.com/xxx.zip
 ```
 
+### Git客户端设置代理
+
+使用 Git 执行
+
+```
+# git config --global http.proxy http://127.0.0.1:1080
+# git config --global https.proxy http://127.0.0.1:1080
+```
