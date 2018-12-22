@@ -1,5 +1,15 @@
 ## Docker 容器
 
+#### 国官方镜像加速
+
+为了永久性保留更改，可以修改 `/etc/docker/daemon.json` 文件并添加上 registry-mirrors 键值
+
+``` json
+{
+  "registry-mirrors": ["https://registry.docker-cn.com"]
+}
+```
+
 #### 容器生命周期管理
 
 ##### - 创建一个新的容器并运行一个命令
@@ -220,14 +230,4 @@
 
 ```shell
 # docker diff [OPTIONS] CONTAINER
-```
-
-#### 国官方镜像加速
-
-为了永久性保留更改，可以修改 `/etc/docker/daemon.json` 文件并添加上 registry-mirrors 键值
-
-``` json
-{
-  "registry-mirrors": ["https://registry.docker-cn.com"]
-}
 ```
