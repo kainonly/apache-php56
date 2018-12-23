@@ -4,6 +4,7 @@
     * [自定义 Cordova 插件](pages/dev/plugman)
     * [VSCode 常用插件](pages/dev/vscode)
 * 部署方案
+    * [Kubernetes 集群](pages/deploy/k8s)
     * [Docker 容器](pages/deploy/docker)
     * [NGINX 编译](pages/deploy/nginx)
     * [PHP-FPM 编译](pages/deploy/php-fpm)
