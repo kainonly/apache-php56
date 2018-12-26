@@ -10,6 +10,38 @@
 }
 ```
 
+#### 常用命令记录
+
+##### - 列出所有容器ID
+
+```shell
+# docker ps -aq
+```
+
+##### - 查看所有运行或者不运行容器
+
+```shell
+# docker ps -a
+```
+
+##### - 停止所有的容器
+
+```shell
+# docker stop $(docker ps -a -q) 或者 docker stop $(docker ps -aq)
+```
+
+##### - 删除所有容器
+
+```shell
+# docker rm $(docker ps -a -q) 或者 docker rm $(docker ps -aq)
+```
+
+###### - 查看当前镜像
+
+```shell
+# docker images
+```
+
 #### 容器生命周期管理
 
 ##### - 创建一个新的容器并运行一个命令
