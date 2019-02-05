@@ -7,13 +7,13 @@
 - 在 `centos` 下执行安装
 
 ```shell
-# yum install gcc gcc-c++ autoconf automake zlib zlib-devel pcre-devel
+yum install gcc gcc-c++ autoconf automake zlib zlib-devel pcre-devel
 ```
 
-- **如果是 `debain` 或 `ubuntu` 下执行安装**
+- 如果是 `debain` 或 `ubuntu` 下执行安装
 
 ```shell
-# apt-get install build-essential libpcre3 libpcre3-dev autoconf zlib1g-dev
+apt install build-essential libpcre3 libpcre3-dev autoconf zlib1g-dev
 ```
 
 ##### 2.准备编译源码
