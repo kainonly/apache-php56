@@ -1,6 +1,7 @@
 - [前端收藏](pages/front)
 - [Kubernetes 集群](pages/k8s)
 - [Docker 容器](pages/docker)
+- [SSH 免密码登录](pages/ssh)
 - [Github 密钥](pages/git_ssh)
 - [Window 终端设置UTF8](pages/cmd)
 - [终端走代理](pages/proxy)
