@@ -17,6 +17,7 @@
 - [PHP-FPM 编译](pages/php-fpm)
 - [Satis 搭建](pages/satis)
 - [FTP 配置之 Vsftpd](pages/vsftp)
+- [SWAP 交换分区](pages/swap)
 - [共享协议 SMB](pages/smb)
 - [MySQL & MariaDB](pages/mysql_mariadb)
 - [RabbitMQ](pages/rabbitmq)
