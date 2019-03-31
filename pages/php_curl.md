@@ -7,9 +7,8 @@ curl: (60) SSL certificate : unable to get local issuer certificate
 ```
 
 
-下载证书 `http://curl.haxx.se/ca/cacert.pem`
+下载证书 `http://curl.haxx.se/ca/cacert.pem`, 配置 `php.ini`
 
-
-配置 `php.ini`
-
-curl.cainfo = "d:/wamp/php/cacert.pem"
+```ini
+curl.cainfo = "/usr/local/php/cacert.pem"
+```
