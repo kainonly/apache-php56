@@ -24,3 +24,4 @@
 - [吞吐量、QPS、并发数、响应时间概念](pages/qps)
 - [Alpine 国内源](pages/apline)
 - [PHP CURL 证书问题](pages/php_curl)
+- [selinux 开启和关闭](pages/selinux)
