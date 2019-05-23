@@ -12,17 +12,17 @@
   - [SASS](https://sass-guidelin.es/zh/) 编写稳健、可维护和可扩展的 Sass
 
 - **Angular 生态**
-  - [ng-zorro](https://ng.ant.design/docs/introduce/zh) Ant Design Angular
-  - [@angular/material](https://material.angular.io/) Material Angular
-  - [@clr/angular](https://clarity.design/) Vmware Clarity Design UI
-  - [ngx-weui](https://www.npmjs.com/package/ngx-weui) Angular WeUI
+  - [ng-zorro](https://ng.ant.design/docs/introduce/zh) Ant Design 的 Angular 实现，开发和服务于企业级后台产品
+  - [@angular/material](https://material.angular.io/) Material Design components for Angular
+  - [@clr/angular](https://clarity.design/) VMWare Clarity Design System
+  - [ngx-weui](https://www.npmjs.com/package/ngx-weui) WeUI 的 Angular 版
   - [ngx-editor](https://sibiraj-s.github.io/ngx-editor/index.html) A Simple WYSIWYG Editor for Angular 6 Applications.
   - [ngx-quill](https://www.npmjs.com/package/ngx-quill) Quill Rich Text Editor
   - [ngx-clipboard](https://www.npmjs.com/package/ngx-clipboard) clipboard
   - [ngx-charts](https://www.npmjs.com/package/@swimlane/ngx-charts) Declarative Charting Framework for Angular2 and beyond!
   - [ngx-perfect-scrollbar](https://www.npmjs.com/package/ngx-perfect-scrollbar) This is an Angular wrapper library for the Perfect Scrollbar.
-  - [ngx-pipes](https://www.npmjs.com/package/ngx-pipes) Another library you might find interesting. 
-  - [ngx-toastr](https://www.npmjs.com/package/ngx-toastr)
+  - [ngx-pipes](https://www.npmjs.com/package/ngx-pipes) 常用处理的管道集合
+  - [ngx-toastr](https://www.npmjs.com/package/ngx-toastr) 消息提示
   - [ngx-uploader](https://www.npmjs.com/package/ngx-uploader) Angular 6 File Uploader
   - [ngx-loading](https://www.npmjs.com/package/ngx-loading) A customisable loading spinner for Angular applications.
   - [ngx-datatable](https://www.npmjs.com/package/ngx-datatable) Simple table extension with sorting, filtering, paging... for Angular apps
@@ -37,7 +37,11 @@
   - [ngx-monaco-editor](https://www.npmjs.com/package/ngx-monaco-editor) Using this Module you can utilize the Monaco Editor as an Angular Component. Feel free to contribute, raise feature requests and make it better.
 
 - **Vue 生态**
+  - [vue-cli](https://cli.vuejs.org/zh/) Vue.js 开发的标准工具
+  - [vue-ssr](https://ssr.vuejs.org/zh/) Vue.js 服务器端渲染
+  - [vuex](https://vuex.vuejs.org/zh/) 状态管理模式
   - [vue-router](https://github.com/vuejs/vue-router) The official router for Vue.js.
+  - [vue-awesome](https://github.com/vuejs/awesome-vue) A curated list of awesome things related to Vue.js
 
 - **混合开发**
   - [Ionic](http://ionicframework.com/docs/) Ionic Framework is an open source UI toolkit for building performant, high-quality mobile and desktop apps using web technologies (HTML, CSS, and JavaScript).
@@ -67,11 +71,13 @@
 
 - **WebAssembly**
   - [C/C++面向WebAssembly编程](https://3dgen.cn/cppwasm-book/) 教程
-
+  - [assemblyscript](https://github.com/AssemblyScript/assemblyscript) Definitely not a TypeScript to WebAssembly compiler
 
 #### UI / UX
 
 - [iconfont](https://www.iconfont.cn) 阿里巴巴矢量图标库
+- [fontawesome](http://fontawesome.dashgame.com/) 一套绝佳的图标字体库和CSS框架
+- [icomoon](https://icomoon.io/) Pixel Perfect Icon Solutions
 - [stenciltown](https://stenciltown.omnigroup.com/categories/ui-ux/) UX 模板
 
 #### 开发工具
