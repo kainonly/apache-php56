@@ -1,8 +1,4 @@
-## Kubernetes 集群
-
-Kubernetes 是用于自动部署，扩展和管理容器化应用程序的开源系统。
-
-#### kubeadm 概述
+## kubeadm 概述
 
 Kubeadm 是一个工具，它提供了 kubeadm init 以及 kubeadm join 这两个命令作为快速创建 kubernetes 集群的最佳实践。
 

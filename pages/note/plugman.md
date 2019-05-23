@@ -1,4 +1,10 @@
-## Plugman 
+## 自定义 Cordova 插件 
+
+安装 `plugman`
+
+```shell
+npm install plugman -g
+```
 
 创建插件模板
 

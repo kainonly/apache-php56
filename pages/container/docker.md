@@ -1,16 +1,4 @@
-## Docker 容器
-
-#### 国内镜像加速
-
-为了永久性保留更改，可以修改 `/etc/docker/daemon.json` 文件并添加上 registry-mirrors 键值
-
-``` json
-{
-  "registry-mirrors": ["https://registry.docker-cn.com"]
-}
-```
-
-#### 常用命令记录
+## Docker 常用命令
 
 ##### - 列出所有容器ID
 
