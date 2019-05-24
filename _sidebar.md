@@ -16,6 +16,8 @@
   - [SWAP 交换分区](pages/deploy/swap)
   - [释放 Linux Buff/Cache](pages/deploy/buff_cache)
   - [NGINX 编译](pages/deploy/nginx)
+  - [NGINX 隐藏版本](pages/deploy/nginx_hide)
+  - [NGINX 基本防护](pages/deploy/nginx_security)
   - [PHP-FPM 编译](pages/deploy/php-fpm)
   - [PostgreSQL 优化](pages/deploy/pgsql)
   - [FTP 配置之 Vsftpd](pages/deploy/vsftp)
