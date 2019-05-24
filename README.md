@@ -73,6 +73,28 @@
   - [C/C++面向WebAssembly编程](https://3dgen.cn/cppwasm-book/) 教程
   - [assemblyscript](https://github.com/AssemblyScript/assemblyscript) Definitely not a TypeScript to WebAssembly compiler
 
+#### 后端技术
+
+- **PHP**
+  - [lcobucci/jwt](https://packagist.org/packages/lcobucci/jwt) A simple library to work with JSON Web Token and JSON Web Signature based on the RFC 7519
+  - [guzzlehttp/guzzle](https://packagist.org/packages/guzzlehttp/guzzle) Guzzle is a PHP HTTP client library
+  - [easywechat](https://www.easywechat.com/) EasyWeChat 是一个开源的 微信 非官方 SDK
+  - [Carbon](https://carbon.nesbot.com/docs/) The Carbon class is inherited from the PHP DateTime class
+  - [filesystem](https://symfony.com/doc/current/components/filesystem.html) The Filesystem component provides basic utilities for the filesystem
+  - [Doctrine](https://www.doctrine-project.org) Doctrine is a collection of projects built for PHP
+  - [phpredis](https://github.com/phpredis/phpredis) The phpredis extension provides an API for communicating with the Redis key-value store
+  - [php-restclient](https://github.com/tcdent/php-restclient) A generic REST API client for PHP
+  - [ImageWorkshop](https://phpimageworkshop.com/) ImageWorkshop is a PHP 5.3+ library that helps you to manage images, based on GD library
+  - [PHP-on-Couch](https://github.com/PHP-on-Couch/PHP-on-Couch) Data Access Library to access a CouchDB server with PHP
+  - [vlucas/pikirasa](https://packagist.org/packages/vlucas/pikirasa) PKI public/private RSA key encryption using the OpenSSL extension
+  - [phpseclib](https://packagist.org/packages/phpseclib/phpseclib) phpseclib is designed to be ultra-compatible
+  - [oauth2](https://oauth2.thephpleague.com/) league/oauth2-server is a library that makes implementing a standards compliant OAuth 2.0 server trivial
+  - [oauth2-client](https://oauth2-client.thephpleague.com/) The league/oauth2-client package provides an easy base for integration with various OAuth 2.0 Providers around the web, without overburdening your application with the concerns of RFC 6749
+  - [hashids](https://packagist.org/packages/hashids/hashids) Generate short, unique, non-sequential ids (like YouTube and Bitly) from numbers
+  - [overtrue/http](https://github.com/overtrue/http) A simple http client wrapper
+  - [mdanter/ecc](https://packagist.org/packages/mdanter/ecc) PHP Elliptic Curve Cryptography library
+  - [php-casbin](https://github.com/php-casbin/php-casbin) An authorization library that supports access control models like ACL, RBAC, ABAC in PHP
+
 #### UI / UX
 
 - [iconfont](https://www.iconfont.cn) 阿里巴巴矢量图标库
