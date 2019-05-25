@@ -67,6 +67,10 @@
   - [AntV](https://antv.alipay.com/zh-cn/index.html) 是蚂蚁金服全新一代数据可视化解决方案
   - [ECharts](https://echarts.baidu.com/) 百度开源可视化库
 
+- **本地存储**
+  - [PouchDB](https://pouchdb.com/) PouchDB is an open-source JavaScript database inspired by Apache CouchDB that is designed to run well within the browser.
+  - [zangodb](https://erikolson186.github.io/zangodb/index.html) ZangoDB is a MongoDB-like interface for HTML5 IndexedDB
+
 - **自动构建**
   - [webpack](https://www.webpackjs.com/) 一个现代 JavaScript 应用程序的静态模块打包器
   - [parcel](https://www.parceljs.cn/) 极速、零配置的 web 应用打包工具
@@ -123,6 +127,7 @@
 - [TravisCI](https://travis-ci.org/) 开源持续集成构建项目
 - [Coveralls](https://coveralls.io/) 可帮助您跟踪代码覆盖率
 - [docsify](https://docsify.js.org/#/zh-cn/) docsify 是一个动态生成文档网站的工具
+- [清华大学](https://mirrors.tuna.tsinghua.edu.cn/) 开源软件镜像站
 - [shields.io](https://shields.io/) 徽标生成器
 - [pkgs.org](https://pkgs.org/) Linux 包查询
 - [unpkg](https://unpkg.com/#/) 很全面的 CDN 加速
