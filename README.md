@@ -75,7 +75,6 @@
   - [webpack](https://www.webpackjs.com/) 一个现代 JavaScript 应用程序的静态模块打包器
   - [parcel](https://www.parceljs.cn/) 极速、零配置的 web 应用打包工具
   - [gulp](https://gulpjs.com/) 用自动化构建工具增强你的工作流程
-  - [browsersync](https://www.browsersync.io/) Time-saving synchronised browser testing
 
 - **单元测试**
   - [mochajs](https://mochajs.org/) 是一个功能丰富的JavaScript测试框架
@@ -88,6 +87,8 @@
 #### 后端技术
 
 - **PHP**
+  - [laravel](https://laravel.com/) The PHP Framework For Web Artisans
+  - [ThinkPHP](http://www.thinkphp.cn/) 是一个免费开源的，快速、简单的面向对象的 轻量级PHP开发框架
   - [lcobucci/jwt](https://packagist.org/packages/lcobucci/jwt) A simple library to work with JSON Web Token and JSON Web Signature based on the RFC 7519
   - [guzzlehttp/guzzle](https://packagist.org/packages/guzzlehttp/guzzle) Guzzle is a PHP HTTP client library
   - [easywechat](https://www.easywechat.com/) EasyWeChat 是一个开源的 微信 非官方 SDK
@@ -108,13 +109,40 @@
   - [php-casbin](https://github.com/php-casbin/php-casbin) An authorization library that supports access control models like ACL, RBAC, ABAC in PHP
 
 - **Node**
+  - [next](https://docs.nestjs.com/) Nest is a framework for building efficient, scalable Node.js server-side applications
   - [egg.js](https://eggjs.org/zh-cn/) 为企业级框架和应用而生
+  - [koa](https://koajs.com/) Koa is a new web framework designed by the team behind Express
+  - [Express](http://expressjs.com/) Fast, unopinionated, minimalist web framework for Node.js
   - [PM2](https://pm2.io/) PM2 Runtime is a Production Process Manager for Node.js applications with a built-in Load Balancer
   - [xlsx](https://www.npmjs.com/package/xlsx) Parser and writer for various spreadsheet formats
+  - [mysql2](https://github.com/sidorares/node-mysql2) fast node-mysql compatible mysql driver for node.js
   - [ioredis](https://github.com/luin/ioredis) A robust, performance-focused and full-featured Redis client for Node.js
   - [ali-rds](https://www.npmjs.com/package/ali-rds) Aliyun RDS client
   - [Sequelize](http://docs.sequelizejs.com/) Sequelize is a promise-based Node.js ORM
+  - [Socket.io](https://socket.io/) FEATURING THE FASTEST AND MOST RELIABLE REAL-TIME ENGINE
+  - [MQTT](https://github.com/mqttjs/MQTT.js#readme) MQTT.js is a client library for the MQTT protocol, written in JavaScript for node.js and the browser
+  - [GraphQL](http://graphql.cn/) 一种用于 API 的查询语言
+  - [browsersync](https://www.browsersync.io/) Time-saving synchronised browser testing
 
+- **Golang**
+  - [awesome-go](https://awesome-go.com/) A curated list of awesome Go frameworks, libraries and software
+  - [iris](https://iris-go.com/) The fastest backend web framework for Go
+  - [gorm](https://github.com/jinzhu/gorm) The fantastic ORM library for Golang, aims to be developer friendly
+  - [go-ini/ini](https://github.com/go-ini/ini) Package ini provides INI file read and write functionality in Go
+  - [go-redis/redis](https://github.com/go-redis/redis) Type-safe Redis client for Golang
+  - [go-oauth2/oauth2](https://github.com/go-oauth2/oauth2) OAuth 2.0 server library for the Go programming language
+  - [dgrijalva/jwt-go](https://github.com/dgrijalva/jwt-go) Golang implementation of JSON Web Tokens (JWT)
+  - [Carbon](https://github.com/uniplaces/carbon) Carbon for Golang, an extension for Time
+  - [mongo-go-driver](https://github.com/mongodb/mongo-go-driver) The Go driver for MongoDB
+  - [oauth2](https://github.com/golang/oauth2) oauth2 package contains a client implementation for OAuth 2.0 spec
+  - [go-linq](https://github.com/ahmetb/go-linq) .NET LINQ capabilities in Go
+  - [goderive](https://github.com/awalterschulze/goderive) Functional programming for Golang
+  - [panjf2000/ants](https://github.com/panjf2000/ants) ants是一个高性能的协程池，实现了对大规模goroutine的调度管理、goroutine复用
+  - [bild](https://github.com/anthonynsimon/bild) A collection of parallel image processing algorithms in pure Go
+  - [govalidator](https://github.com/asaskevich/govalidator) Package of validators and sanitizers for strings, numerics, slices and structs
+  - [ksuid](https://github.com/segmentio/ksuid) K-Sortable Globally Unique IDs
+  - [casbin](https://github.com/casbin/casbin) An authorization library that supports access control models like ACL, RBAC, ABAC in Golang
+ 
 #### UI / UX
 
 - [iconfont](https://www.iconfont.cn) 阿里巴巴矢量图标库
@@ -122,7 +150,7 @@
 - [icomoon](https://icomoon.io/) Pixel Perfect Icon Solutions
 - [stenciltown](https://stenciltown.omnigroup.com/categories/ui-ux/) UX 模板
 
-#### 开发工具
+#### 其他收藏
 
 - [TravisCI](https://travis-ci.org/) 开源持续集成构建项目
 - [Coveralls](https://coveralls.io/) 可帮助您跟踪代码覆盖率
