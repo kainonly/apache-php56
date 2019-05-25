@@ -126,7 +126,8 @@
 
 - [TravisCI](https://travis-ci.org/) 开源持续集成构建项目
 - [Coveralls](https://coveralls.io/) 可帮助您跟踪代码覆盖率
-- [docsify](https://docsify.js.org/#/zh-cn/) docsify 是一个动态生成文档网站的工具
+- [tensorflow](https://tensorflow.google.cn/) An end-to-end open source machine learning platform
+- [docsify](https://docsify.js.org/#/zh-cn/) 是一个动态生成文档网站的工具
 - [清华大学](https://mirrors.tuna.tsinghua.edu.cn/) 开源软件镜像站
 - [shields.io](https://shields.io/) 徽标生成器
 - [pkgs.org](https://pkgs.org/) Linux 包查询
@@ -134,4 +135,6 @@
 - [gitignore.io](https://www.gitignore.io/) gitignore 生成器
 - [Shadowsocks](https://shadowsocks.org) 科学上网
 - [jitpack](https://jitpack.io/) JVM and Android libraries
+- [ethfans](https://ethfans.org/) 以太坊
+- [Hyperledger](https://cn.hyperledger.org/) 超级账本
 - [中州韻輸入法引擎](https://rime.im/) 支持 Windows XP SP3, Windows 7+, macOS 10.7+, Linux (IBus, Fcitx) 
