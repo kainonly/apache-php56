@@ -7,6 +7,7 @@
   - [VSCode 常用插件](pages/note/vscode)
   - [OpenSSL 生成密钥证书](pages/note/openssl_used)
   - [吞吐量（TPS）、QPS、并发数、响应时间（RT）概念](pages/note/qps)
+  - [IP 斜杠后数字的含义](pages/note/ip)
 
 - **部署**
   - [Linux 常用命令](pages/deploy/linux)
