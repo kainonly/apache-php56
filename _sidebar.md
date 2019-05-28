@@ -22,6 +22,7 @@
   - [PHP-FPM 编译](pages/deploy/php-fpm)
   - [PostgreSQL 优化](pages/deploy/pgsql)
   - [FTP 配置之 Vsftpd](pages/deploy/vsftp)
+  - [搭建 OpenVPN](pages/deploy/openvpn)
   - [搭建 IKEv2 VPN](pages/deploy/ikev2_vpn)
   - [共享协议 SMB](pages/deploy/smb)
   - [Satis 搭建](pages/deploy/satis)
