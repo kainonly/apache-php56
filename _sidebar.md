@@ -7,6 +7,7 @@
   - [VSCode 常用插件](pages/note/vscode)
   - [OpenSSL 生成密钥证书](pages/note/openssl_used)
   - [吞吐量（TPS）、QPS、并发数、响应时间（RT）概念](pages/note/qps)
+  - [IP 斜杠后数字的含义](pages/note/ip)
 
 - **部署**
   - [Linux 常用命令](pages/deploy/linux)
@@ -22,6 +23,8 @@
   - [PHP-FPM 编译](pages/deploy/php-fpm)
   - [PostgreSQL 优化](pages/deploy/pgsql)
   - [FTP 配置之 Vsftpd](pages/deploy/vsftp)
+  - [搭建 OpenVPN](pages/deploy/openvpn)
+  - [搭建 IKEv2 VPN](pages/deploy/ikev2_vpn)
   - [共享协议 SMB](pages/deploy/smb)
   - [Satis 搭建](pages/deploy/satis)
   - [PHP 扩展](pages/deploy/php_ext)
