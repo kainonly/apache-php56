@@ -142,6 +142,7 @@
   - [govalidator](https://github.com/asaskevich/govalidator) Package of validators and sanitizers for strings, numerics, slices and structs
   - [ksuid](https://github.com/segmentio/ksuid) K-Sortable Globally Unique IDs
   - [casbin](https://github.com/casbin/casbin) An authorization library that supports access control models like ACL, RBAC, ABAC in Golang
+  - [codis](https://github.com/CodisLabs/codis) Proxy based Redis cluster solution supporting pipeline and scaling dynamically
  
 #### UI / UX
 
