@@ -11,6 +11,7 @@
 
 - **部署**
   - [Linux 常用命令](pages/deploy/linux)
+  - [Linux 通讯内核优化](pages/deploy/linux_sysctl)
   - [Iptable 规则](pages/deploy/iptable)
   - [SSH 免密码登录](pages/deploy/ssh)
   - [selinux 开启和关闭](pages/deploy/selinux)
