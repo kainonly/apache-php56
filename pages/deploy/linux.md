@@ -54,3 +54,8 @@
 # df -l
 ```
 
+清空一个linux用户密码
+
+```shell
+# passwd -d user1
+```
