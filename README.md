@@ -109,11 +109,14 @@
   - [php-casbin](https://github.com/php-casbin/php-casbin) An authorization library that supports access control models like ACL, RBAC, ABAC in PHP
 
 - **Node**
-  - [next](https://docs.nestjs.com/) Nest is a framework for building efficient, scalable Node.js server-side applications
+  - [NestJS](https://docs.nestjs.com/) Nest is a framework for building efficient, scalable Node.js server-side applications
+  - [Fastify](https://www.fastify.io/) Fast and low overhead web framework, for Node.js
+  - [TypeORM](https://typeorm.io) Amazing ORM for TypeScript and JavaScript (ES7, ES6, ES5)
   - [egg.js](https://eggjs.org/zh-cn/) 为企业级框架和应用而生
   - [koa](https://koajs.com/) Koa is a new web framework designed by the team behind Express
   - [Express](http://expressjs.com/) Fast, unopinionated, minimalist web framework for Node.js
   - [PM2](https://pm2.io/) PM2 Runtime is a Production Process Manager for Node.js applications with a built-in Load Balancer
+  - [JSON Schema](http://json-schema.org) A Vocabulary for Structural Validation of JSON
   - [xlsx](https://www.npmjs.com/package/xlsx) Parser and writer for various spreadsheet formats
   - [mysql2](https://github.com/sidorares/node-mysql2) fast node-mysql compatible mysql driver for node.js
   - [ioredis](https://github.com/luin/ioredis) A robust, performance-focused and full-featured Redis client for Node.js
