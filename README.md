@@ -170,5 +170,3 @@
 - [ethfans](https://ethfans.org/) 以太坊
 - [Hyperledger](https://cn.hyperledger.org/) 超级账本
 - [中州韻輸入法引擎](https://rime.im/) 支持 Windows XP SP3, Windows 7+, macOS 10.7+, Linux (IBus, Fcitx) 
-
-##### 琼 ICP 备 18004473 号 (http://www.miit.gov.cn/)
