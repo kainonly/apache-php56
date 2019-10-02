@@ -10,6 +10,8 @@
   - [TypeScript](https://www.typescriptlang.org/) JavaScript 超集
   - [RxJS](https://rxjs.dev/) 一种针对异步数据流的编程
   - [SASS](https://sass-guidelin.es/zh/) 编写稳健、可维护和可扩展的 Sass
+  - [JSON Schema](http://json-schema.org)
+  - [Understanding JSON Schema](https://json-schema.org/understanding-json-schema/index.html)
 
 - **Angular 生态**
   - [ng-zorro](https://ng.ant.design/docs/introduce/zh) Ant Design 的 Angular 实现，开发和服务于企业级后台产品
