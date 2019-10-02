@@ -148,6 +148,7 @@
   - [codis](https://github.com/CodisLabs/codis) Proxy based Redis cluster solution supporting pipeline and scaling dynamically
 
 - **调试工具**
+  - [refind](http://www.rodsbooks.com/refind/)
   - [Packet Sender](https://packetsender.com/)
 
 #### UI / UX
