@@ -176,3 +176,4 @@
 - [ethfans](https://ethfans.org/) 以太坊
 - [Hyperledger](https://cn.hyperledger.org/) 超级账本
 - [中州韻輸入法引擎](https://rime.im/) 支持 Windows XP SP3, Windows 7+, macOS 10.7+, Linux (IBus, Fcitx) 
+- [腾讯软件源](https://mirrors.cloud.tencent.com/) 软件源同步频率为每天一次，同步的时间为 凌晨0点-2点
