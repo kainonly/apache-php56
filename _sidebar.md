@@ -15,6 +15,7 @@
   - [Linux 通讯内核优化](pages/deploy/linux_sysctl)
   - [Iptable 规则](pages/deploy/iptable)
   - [SSH 免密码登录](pages/deploy/ssh)
+  - [SSH 登录限制](pages/deploy/ssh_deny)
   - [selinux 开启和关闭](pages/deploy/selinux)
   - [SWAP 交换分区](pages/deploy/swap)
   - [释放 Linux Buff/Cache](pages/deploy/buff_cache)
