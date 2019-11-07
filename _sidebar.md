@@ -4,7 +4,6 @@
   - [终端走代理](pages/note/proxy)
   - [Ionic IOS 真机调试](pages/note/ionic_ios_bug)
   - [自定义 Cordova 插件](pages/note/plugman)
-  - [VSCode 常用插件](pages/note/vscode)
   - [OpenSSL 生成密钥证书](pages/note/openssl_used)
   - [吞吐量（TPS）、QPS、并发数、响应时间（RT）概念](pages/note/qps)
   - [IP 斜杠后数字的含义](pages/note/ip)
