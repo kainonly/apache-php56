@@ -5,11 +5,12 @@
   - [Ionic IOS 真机调试](pages/note/ionic_ios_bug)
   - [自定义 Cordova 插件](pages/note/plugman)
   - [OpenSSL 生成密钥证书](pages/note/openssl_used)
-  - [吞吐量（TPS）、QPS、并发数、响应时间（RT）概念](pages/note/qps)
+  - [指标概念](pages/note/performance)
   - [IP 斜杠后数字的含义](pages/note/ip)
   - [Lumen 配置Cookie](pages/note/lumen_cookie)
   - [SSH 私密取消密码](pages/note/ssh_empty)
   - [Grub2引导Linux](pages/note/grub2)
+  - [MAC开启Docker端口](pages/note/docker_mac)
 
 - **部署**
   - [Linux 常用命令](pages/deploy/linux)
