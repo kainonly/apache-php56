@@ -1,5 +1,11 @@
 ## Alpine 国内源
 
+使用华为镜像 `https://mirrors.huaweicloud.com`
+
+```shell
+sed -i "s@http://dl-cdn.alpinelinux.org/@https://mirrors.huaweicloud.com/@g" /etc/apk/repositories
+```
+
 使用阿里镜像 `https://mirrors.aliyun.com`
 
 ```shell
