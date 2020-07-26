@@ -1,8 +1,4 @@
-# kain's notepad
-
-> 一些有用的技术收藏
-
-#### 前端技术
+# 前端技术
 
 - **技术文档**
   - [MDN](https://developer.mozilla.org/zh-CN/docs/Web) Web 开发技术
@@ -86,7 +82,7 @@
   - [C/C++面向WebAssembly编程](https://3dgen.cn/cppwasm-book/) 教程
   - [assemblyscript](https://github.com/AssemblyScript/assemblyscript) Definitely not a TypeScript to WebAssembly compiler
 
-#### 后端技术
+# 后端技术
 
 - **PHP**
   - [laravel](https://laravel.com/) The PHP Framework For Web Artisans
@@ -153,14 +149,14 @@
   - [refind](http://www.rodsbooks.com/refind/)
   - [Packet Sender](https://packetsender.com/)
 
-#### UI / UX
+# UI / UX
 
 - [iconfont](https://www.iconfont.cn) 阿里巴巴矢量图标库
 - [fontawesome](http://fontawesome.dashgame.com/) 一套绝佳的图标字体库和CSS框架
 - [icomoon](https://icomoon.io/) Pixel Perfect Icon Solutions
 - [stenciltown](https://stenciltown.omnigroup.com/categories/ui-ux/) UX 模板
 
-#### 其他收藏
+# 其他收藏
 
 - [TravisCI](https://travis-ci.org/) 开源持续集成构建项目
 - [Coveralls](https://coveralls.io/) 可帮助您跟踪代码覆盖率

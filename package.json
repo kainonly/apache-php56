@@ -3,8 +3,5 @@
   "version": "1.0.0",
   "scripts": {
     "start": "docsify serve"
-  },
-  "devDependencies": {
-    "docsify": "^4.8.5"
   }
 }
