@@ -1,4 +1,4 @@
-## NGINX 内核优化
+## NGINX 优化
 
 修改 `sysctl.conf` 对Linux内核参数优化，让 Nginx 更加充分的发挥性能，以下参数需要根据业务逻辑和实际的硬件成本来综合考虑
 
@@ -56,4 +56,39 @@ net.core.somaxconn = 262114
 
 # 选项用于设定系统中最多有多少个TCP套接字不被关联到任何一个用户文件句柄上。如果超过这个数字，孤立链接将立即被复位并输出警告信息。这个限制指示为了防止简单的DOS攻击，不用过分依靠这个限制甚至认为的减小这个值，更多的情况是增加这个值
 net.ipv4.tcp_max_orphans = 262114
+```
+
+隐藏版本号
+
+```conf
+http {
++    server_tokens off;
+}
+```
+
+隐藏X-Powered-By，需要修改 `php.ini`
+
+```conf
+expose_php = Off
+```
+
+禁止Scrapy等爬虫工具的抓取、禁止指定UA及UA为空的访问、禁止非GET|HEAD|POST方式的抓取
+
+```conf
+server {
+    #禁止Scrapy等爬虫工具的抓取
+    if ($http_user_agent ~* "Scrapy|Sogou web spider|Baiduspider") {
+        return 403;
+    }
+
+    #禁止指定UA及UA为空的访问
+    if ($http_user_agent ~ "FeedDemon|JikeSpider|Indy Library|Alexa Toolbar|AskTbFXTV|AhrefsBot|CrawlDaddy|CoolpadWebkit|Java|Feedly|UniversalFeedParser|ApacheBench|Microsoft URL Control|Swiftbot|ZmEu|oBot|jaunty|Python-urllib|lightDeckReports Bot|YYSpider|DigExt|YisouSpider|HttpClient|MJ12bot|heritrix|EasouSpider|LinkpadBot|Ezooms|^$" ) {
+        return 403;
+    }
+
+    #禁止非GET|HEAD|POST方式的抓取
+    if ($request_method !~ ^(GET|HEAD|POST)$) {
+        return 403;
+    }
+}
 ```

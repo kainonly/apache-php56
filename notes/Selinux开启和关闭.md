@@ -1,4 +1,4 @@
-## selinux 开启和关闭
+## Selinux 开启和关闭
 
 如果SELinux status参数为enabled即为开启状态
 

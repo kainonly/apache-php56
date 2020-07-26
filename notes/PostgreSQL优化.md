@@ -1,4 +1,4 @@
-## PostgreSQL 配置优化
+## PostgreSQL 优化
 
 POSTGRESQL 参数
 

@@ -1,4 +1,4 @@
-## grub2引导Linux系统
+## grub2 引导 Linux 系统
 
 ```shell
 # 这个是我的 linux 分区，可以根据需要调整 set ro
