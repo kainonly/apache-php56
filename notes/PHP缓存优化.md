@@ -2,7 +2,7 @@
 
 OPcache是PHP中的Zend扩展，可以大大提升PHP的性能。 OPcache 通过将 PHP 脚本预编译的字节码存储到共享内存中来提升 PHP 的性能， 存储预编译字节码的好处就是 省去了每次加载和解析 PHP 脚本的开销。
 
-#### OPcache 配置
+### OPcache 配置
 
 接下来，我们需要在 PHP 的配置文件中启用 OPcache（默认是关闭的）
 

@@ -1,19 +1,19 @@
 ## Alpine 国内源
 
-使用华为镜像 `https://mirrors.huaweicloud.com`
+阿里云镜像
 
-```shell
-sed -i "s@http://dl-cdn.alpinelinux.org/@https://mirrors.huaweicloud.com/@g" /etc/apk/repositories
-```
-
-使用阿里镜像 `https://mirrors.aliyun.com`
-
-```shell
+```shell script
 sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
 ```
 
-使用科大镜像 `http://mirrors.ustc.edu.cn`
+华为镜像 
 
-```shell
+```shell script
+sed -i "s@http://dl-cdn.alpinelinux.org/@https://mirrors.huaweicloud.com/@g" /etc/apk/repositories
+```
+
+科大镜像
+
+```shell script
 sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories
 ```

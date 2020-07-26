@@ -1,23 +1,21 @@
 ## OpensSSL 编译
 
-官网下载，https://www.openssl.org
+查看版本，
 
-#### 查看版本
-
-```shell
+```shell script
 openssl version
 ```
 
-#### 编译
+官网下载 https://www.openssl.org 编译
 
-```shell
+```shell script
 ./config
 make && make install
 ```
 
-#### 建立链接
+建立链接
 
-```shell
+```shell script
 ln -s /usr/local/ssl/bin/openssl /usr/bin/openssl
 ln -s /usr/local/lib64/libssl.so.1.1 /usr/lib64/libssl.so.1.1
 ln -s /usr/local/lib64/libcrypto.so.1.1 /usr/lib64/libcrypto.so.1.1

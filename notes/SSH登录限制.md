@@ -1,6 +1,6 @@
 ## SSH 登录限制
 
-#### 只允许指定用户进行登录
+### 只允许指定用户进行登录
 
 修改 `/etc/ssh/sshd_config`，例如：允许 aliyun 和从 192.168.1.1 登录的 test 帐户通过 SSH 登录系统
 
@@ -8,7 +8,7 @@
 AllowUsers aliyun test@192.168.1.1  
 ```
 
-#### 只拒绝指定用户进行登录
+### 只拒绝指定用户进行登录
 
 修改 `/etc/ssh/sshd_config`，例如：拒绝 zhangsan、aliyun 帐户通过 SSH 登录系统
 
@@ -16,7 +16,7 @@ AllowUsers aliyun test@192.168.1.1
 DenyUsers zhangsan aliyun
 ```
 
-#### 固定的IP进行禁止登录
+### 固定的IP进行禁止登录
 
 修改 `/etc/hosts.allow`
 
