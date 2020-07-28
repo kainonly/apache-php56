@@ -2,7 +2,7 @@
 
 My Name is Kain...
 
-> 90后，从事酒店互联网行业，**Full Stack Developer** 兼架构师，专注中小型项目的 DevOps
+> 90后，从事酒店互联网行业，**Full Stack Developer**，专注中小型项目的 DevOps
 
 正在做的事...
 
