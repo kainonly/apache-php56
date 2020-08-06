@@ -1,4 +1,5 @@
 - **常用**
+  - [Github密钥](notes/Github密钥.md)
   - [终端设置代理](notes/终端设置代理)
   - [Window 终端设置 UTF8](notes/Window终端设置UTF8)
   - [OpenSSL 生成密钥证书](notes/OpenSSL生成密钥证书)
