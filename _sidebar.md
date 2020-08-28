@@ -21,6 +21,7 @@
   - [Openssl 编译](notes/OpensSSL编译)
   - [FTP 配置之 Vsftpd](notes/FTP配置之Vsftpd)
   - [Grub2 引导 Linux](notes/grub2引导Linux系统)
+  - [EMQX 容器持久化](notes/EMQX容器持久化.md)
   
 - **开发**
   - [MAC 开启 Docker端口](notes/MAC开启Docker端口)
