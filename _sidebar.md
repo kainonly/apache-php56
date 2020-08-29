@@ -33,7 +33,8 @@
   - [PostgreSQL 优化](notes/PostgreSQL优化)
   - [Redis 故障](notes/Redis故障)
 
-- **概念**
+- **知识**
+  - [Github 常出现的缩写含义](notes/Github常出现的缩写含义)
   - [什么是 QPS、响应时间、吞吐量](notes/什么是QPS响应时间吞吐量)
   - [IP 斜杠后数字的含义](notes/IP斜杠后数字的含义)
   - [像素尺寸](notes/像素尺寸)
