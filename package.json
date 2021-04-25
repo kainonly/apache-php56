@@ -1,8 +1,0 @@
-{
-  "name": "kainonly.github.io",
-  "version": "1.0.0",
-  "scripts": {
-    "start": "docsify serve",
-    "deploy": "python deploy.py"
-  }
-}
