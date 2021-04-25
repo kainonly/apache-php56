@@ -1,0 +1,226 @@
+# Version of the configuration file
+version: 4.0.0
+
+# Icarus theme variant, can be "default" or "cyberpunk"
+variant: default
+
+# Path or URL to the website's logo
+logo: /img/logo.png
+
+# Page metadata configurations
+head:
+  # URL or path to the website's icon
+  favicon: /img/favicon.svg
+
+  # Web application manifests configuration
+  # https://developer.mozilla.org/en-US/docs/Web/Manifest
+  manifest:
+    # Name of the web application (default to the site title)
+    name:
+    # The displayed name of the web application
+    # when there is not enough space to display full name
+    short_name:
+    # The start URL of the web application
+    start_url:
+    # The default theme color for the application
+    theme_color:
+    # A placeholder background color for the application page to display
+    # before its stylesheet is loaded
+    background_color:
+    # The preferred display mode for the website
+    display: standalone
+    # Image files that can serve as application icons for different contexts
+    icons:
+      - # The path to the image file
+        src: ''
+        # A string containing space-separated image dimensions
+        sizes: ''
+        # A hint as to the media type of the image
+        type:
+
+  # Open Graph metadata
+  # https://hexo.io/docs/helpers.html#open-graph
+  open_graph:
+    # Page title (og:title) (optional)
+    # You should leave this blank for most of the time
+    title:
+    # Page type (og:type) (optional)
+    # You should leave this blank for most of the time
+    type: blog
+    # Page URL (og:url) (optional)
+    # You should leave this blank for most of the time
+    url:
+    # Page cover (og:image) (optional)
+    # You should leave this blank for most of the time
+    image:
+    # Site name (og:site_name) (optional)
+    # You should leave this blank for most of the time
+    site_name:
+    # Page author (article:author) (optional)
+    # You should leave this blank for most of the time
+    author:
+    # Page description (og:description) (optional)
+    # You should leave this blank for most of the time
+    description:
+    # Twitter card type (twitter:card)
+    twitter_card:
+    # Twitter ID (twitter:creator)
+    twitter_id:
+    # Twitter Site (twitter:site)
+    twitter_site:
+    # Google+ profile link (deprecated)
+    google_plus:
+    # Facebook admin ID
+    fb_admins:
+    # Facebook App ID
+    fb_app_id:
+
+  # Structured data of the page
+  # https://developers.google.com/search/docs/guides/intro-structured-data
+  structured_data:
+    # Page title (optional)
+    # You should leave this blank for most of the time
+    title:
+    # Page description (optional)
+    # You should leave this blank for most of the time
+    description:
+    # Page URL (optional)
+    # You should leave this blank for most of the time
+    url:
+    # Page author (article:author) (optional)
+    # You should leave this blank for most of the time
+    author:
+    # Page images (optional)
+    # You should leave this blank for most of the time
+    image:
+
+  # Additional HTML meta tags in an array
+  meta:
+    # Meta tag specified in <attribute>=<value> style
+    # E.g., name=theme-color;content=#123456 => <meta name="theme-color" content="#123456">
+    - ''
+
+# Page top navigation bar configurations
+navbar:
+  menu:
+    主页: /
+    归档: /archives
+    分类: /categories
+    标签: /tags
+
+# Page footer configurations
+footer:
+  links:
+    Download on GitHub:
+      icon: fab fa-github
+      url: 'https://github.com/kainonly'
+    '琼ICP备18004473号':
+      url: 'https://beian.miit.gov.cn'
+
+# Article related configurations
+article:
+  highlight:
+    theme: atom-one-light
+    clipboard: true
+    fold: unfolded
+  readtime: true
+
+# Search plugin configurations
+# https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Search/
+search:
+  type: insight
+
+# Comment plugin configurations
+# https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
+comment:
+  type: disqus
+  # Disqus shortname
+  shortname: ''
+
+# Sidebar configurations.
+# Please be noted that a sidebar is only visible when it has at least one widget
+sidebar:
+  left:
+    sticky: false
+  right:
+    sticky: false
+
+# Sidebar widget configurations
+# http://ppoffice.github.io/hexo-theme-icarus/categories/Widgets/
+widgets:
+  # Profile widget configurations
+  - position: left
+    type: profile
+    author: Kain
+    author_title: 全栈 & 敏捷架构师
+    location: 中国 · 海南
+    avatar: /img/avatar.jpg
+    avatar_rounded: true
+    follow_link: 'https://github.com/kainonly'
+
+  # Table of contents widget configurations
+  - position: left
+    type: toc
+    index: true
+    collapsed: true
+    depth: 3
+
+  # Recommendation links widget configurations
+  - position: left
+    type: links
+    links:
+      Hexo: 'https://hexo.io'
+      Bulma: 'https://bulma.io'
+
+  # Categories widget configurations
+  - position: left
+    type: categories
+
+  # Recent posts widget configurations
+  - position: left
+    type: recent_posts
+
+  # Archives widget configurations
+  - position: left
+    type: archives
+
+  # Tags widget configurations
+  - position: left
+    type: tags
+
+# Plugin configurations
+# https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/
+plugins:
+  animejs: true
+  back_to_top: true
+  # Alerting users about the use of cookies
+  # https://www.osano.com/cookieconsent/
+  cookie_consent:
+    # The compliance type. Can be "info", "opt-in", or "opt-out"
+    type: info
+    # Theme of the popup. Can be "block", "edgeless", or "classic"
+    theme: edgeless
+    # Whether the popup should stay static regardless of the page scrolls
+    static: false
+    # Where on the screen the consent popup should display
+    position: bottom-left
+    # URL to your site's cookie policy
+    policyLink: 'https://www.cookiesandyou.com/'
+  gallery: true
+  # Google Analytics plugin settings
+  # https://analytics.google.com
+  google_analytics:
+    # Google Analytics tracking ID
+    tracking_id:
+  # Show a progress bar at top of the page on page loading
+  progressbar: true
+
+# CDN provider settings
+# https://ppoffice.github.io/hexo-theme-icarus/Configuration/Theme/speed-up-your-site-with-custom-cdn/
+providers:
+  # Name or URL template of the JavaScript and/or stylesheet CDN provider
+  cdn: jsdelivr
+  # Name or URL template of the webfont CDN provider
+  fontcdn: google
+  # Name or URL of the fontawesome icon font CDN provider
+  iconcdn: fontawesome
