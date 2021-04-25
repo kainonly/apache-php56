@@ -104,9 +104,10 @@ head:
 navbar:
   menu:
     主页: /
-    归档: /archives
+    手册: /document
     分类: /categories
     标签: /tags
+    归档: /archives
 
 # Page footer configurations
 footer:
@@ -177,15 +178,15 @@ widgets:
     type: categories
 
   # Recent posts widget configurations
-  - position: left
+  - position: right
     type: recent_posts
 
   # Archives widget configurations
-  - position: left
+  - position: right
     type: archives
 
   # Tags widget configurations
-  - position: left
+  - position: right
     type: tags
 
 # Plugin configurations
@@ -223,4 +224,4 @@ providers:
   # Name or URL template of the webfont CDN provider
   fontcdn: google
   # Name or URL of the fontawesome icon font CDN provider
-  iconcdn: fontawesome
+  iconcdn: https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.min.css
