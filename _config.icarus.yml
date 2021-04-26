@@ -136,7 +136,7 @@ search:
 comment:
   type: disqus
   # Disqus shortname
-  shortname: ''
+  shortname: 'kains-note'
 
 # Sidebar configurations.
 # Please be noted that a sidebar is only visible when it has at least one widget
@@ -212,7 +212,7 @@ plugins:
   # https://analytics.google.com
   google_analytics:
     # Google Analytics tracking ID
-    tracking_id:
+    tracking_id: G-J0NVPEBDTM
   # Show a progress bar at top of the page on page loading
   progressbar: true
 

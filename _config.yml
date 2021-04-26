@@ -6,7 +6,7 @@ timezone: Asia/Shanghai
 
 # URL
 url: https://kainonly.com
-permalink: ':year/:month/:day/:title/'
+permalink: ':title/'
 permalink_defaults: null
 pretty_urls:
   trailing_index: true
