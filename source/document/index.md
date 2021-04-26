@@ -27,5 +27,5 @@ widgets:
     position: right
 ---
 
-- [辅助 Hyperf 框架的工具集合使用案例](hyperf)
-- [CMQ 消息队列 NODE SDK](cmq)
+- [辅助 Hyperf 框架的工具集合使用案例](/document/hyperf)
+- [CMQ 消息队列 NODE SDK](/document/cmq)

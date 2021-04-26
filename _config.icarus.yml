@@ -5,38 +5,16 @@ logo: /img/logo.png
 head:
   favicon: /img/favicon.svg
   manifest:
-    name:
-    short_name:
-    start_url:
-    theme_color:
-    background_color:
+    name: kain's notes
+    short_name: kain-notes
+    start_url: /
+    theme_color: #f7f7f7
+    background_color: #f7f7f7
     display: standalone
     icons:
-      - src: ""
-        sizes: ""
-        type:
-  open_graph:
-    title:
-    type: blog
-    url:
-    image:
-    site_name:
-    author:
-    description:
-    twitter_card:
-    twitter_id:
-    twitter_site:
-    google_plus:
-    fb_admins:
-    fb_app_id:
-  structured_data:
-    title:
-    description:
-    url:
-    author:
-    image:
-  meta:
-    - ""
+      - src: /img/logo.png
+        sizes: "128x128"
+        type: image/png
 
 navbar:
   menu:

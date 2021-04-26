@@ -66,12 +66,13 @@ for root, _, files in os.walk('./public'):
         if file in exclude['files']:
             continue
         local = pathlib.PurePath(root).joinpath(file).as_posix()
+        key = local.replace('public/', '')
         qcos_client.upload_file(
             Bucket=deploy['bucket'],
             LocalFilePath=local,
-            Key=local
+            Key= key
         )
-        print('Send <' + local + '> Success')
+        print('Send <' + key + '> Success')
 
 print('Sync COS OK!')
 
