@@ -13,7 +13,7 @@ Linux 中的 SWAP（交换分区），类似于 Windows 的虚拟内存。系统
 创建用于交换分区的文件
 
 ```shell script
-dd if=/dev/zero of=/mnt/swap bs=1M count=2048 
+dd if=/dev/zero of=/mnt/swap bs=1M count=2048
 ```
 
 设置交换分区文件
@@ -45,5 +45,3 @@ echo 10 >/proc/sys/vm/swappiness
 ```conf
 vm.swappiness=10
 ```
-
-

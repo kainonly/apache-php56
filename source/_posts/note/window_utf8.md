@@ -14,7 +14,7 @@ CMD 设置
 
 PowerShell 设置
 
-- 1. 创建一个PowerShell配置文件，打开PowerShell执行 `New-Item $PROFILE -ItemType File -Force`
+- 1. 创建一个 PowerShell 配置文件，打开 PowerShell 执行 `New-Item $PROFILE -ItemType File -Force`
 - 2. 修改创建的配置文件 `Microsoft.PowerShell_profile.ps1`，加入内容
 
 ```powershell
@@ -24,4 +24,4 @@ PowerShell 设置
 !> 无法加载文件 X:\Users\...\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1，因为在此系
 。有关详细信息，请参阅 https:/go.microsoft.com/fwlink/?LinkID=135170 中的 about_Execution_Policies。
 
-修改PowerShell的执行策略 `Execution Policy`，执行 `Set-ExecutionPolicy Unrestricted`
+修改 PowerShell 的执行策略 `Execution Policy`，执行 `Set-ExecutionPolicy Unrestricted`

@@ -24,8 +24,8 @@ apt install build-essential libpcre3 libpcre3-dev autoconf zlib1g-dev
 
 ## 准备编译源码
 
-- [NGINX官网](http://nginx.org/en/download.html) 下载需要的版本源码
-- [Openssl官网](https://www.openssl.org/source/) 下载版本 `>=1.0.2` 的版本源码
+- [NGINX 官网](http://nginx.org/en/download.html) 下载需要的版本源码
+- [Openssl 官网](https://www.openssl.org/source/) 下载版本 `>=1.0.2` 的版本源码
 
 > 当今 `http2.0` 协议正在普及，因此如果使用该模块，用于编译的 `openssl` 源码包版本必须 `>=1.0.2`，`nginx` 推荐使用最新的稳定版本
 
@@ -150,7 +150,7 @@ http {
 }
 ```
 
-> 大幅度提高IO性能，有数据表示开启与不开启性能相差31倍，请求不再因为工作进程被阻塞在读文件，而滞留在事件队列中，等待处理，它们可以被空闲的进程处理掉
+> 大幅度提高 IO 性能，有数据表示开启与不开启性能相差 31 倍，请求不再因为工作进程被阻塞在读文件，而滞留在事件队列中，等待处理，它们可以被空闲的进程处理掉
 
 开启 `sendfile`
 
@@ -161,7 +161,7 @@ http {
 }
 ```
 
-> `sendfile` 是一种高效的传输模式，对比传统的(read、write/send方式)能减少拷贝次数，从而避免了数据在内核缓冲区和用户缓冲区之间的拷贝，操作效率很高。开启后内对文件的解析处理会有很大提升，`sendfile_max_chunk` 可以减少阻塞调用sendfile()所花费的最长时间，因为Nginx不会尝试一次将整个文件发送出去，而是每次发送大小为256KB的块数据
+> `sendfile` 是一种高效的传输模式，对比传统的(read、write/send 方式)能减少拷贝次数，从而避免了数据在内核缓冲区和用户缓冲区之间的拷贝，操作效率很高。开启后内对文件的解析处理会有很大提升，`sendfile_max_chunk` 可以减少阻塞调用 sendfile()所花费的最长时间，因为 Nginx 不会尝试一次将整个文件发送出去，而是每次发送大小为 256KB 的块数据
 
 开启 `tcp_nopush`、 `tcp_nodelay`
 
@@ -174,11 +174,11 @@ http {
 
 > `tcp_nopush` 是让一个数据包里发送所有头文件，而不一个接一个的发送，`tcp_nodelay` 是不要缓存数据，而是一段一段的发送，这样有助于解决网络堵塞
 
-开启GZIP
+开启 GZIP
 
 ```conf
 http {
-	gzip on; 
+	gzip on;
 	gzip_disable "MSIE [1-6].(?!.*SV1)";
 	gzip_http_version 1.1;
 	gzip_vary on;
@@ -190,7 +190,7 @@ http {
 }
 ```
 
-> 开启GZIP的目的是压缩静态请求，提高加载速度
+> 开启 GZIP 的目的是压缩静态请求，提高加载速度
 
 优化反向代理
 
@@ -210,7 +210,7 @@ http {
 - `proxy_connect_timeout` 给反向代理的服务设置连接的超时时间
 - `proxy_read_timeout` 连接成功后，等候等待反向代理服务的响应时间
 - `proxy_send_timeout` 反向代理服务数据回传时间
-- `proxy_buffer_size`  指令设置缓冲区大小
+- `proxy_buffer_size` 指令设置缓冲区大小
 - `proxy_buffers` 指令设置缓冲区的大小和数量
 - `proxy_busy_buffers_size` 缓冲区满载后写入磁盘的临时文件大小
 - `proxy_temp_file_write_size` 一次访问能写入的临时文件的大小
@@ -224,7 +224,7 @@ http {
 }
 ```
 
-> 设置keep-alive客户端连接在服务器端保持开启的超时值
+> 设置 keep-alive 客户端连接在服务器端保持开启的超时值
 
 最终 `nginx.conf` 配置是这样的
 
@@ -237,7 +237,7 @@ pid /var/run/nginx.pid;
 lock_file /var/run/nginx.lock;
 
 events {
-	worker_connections 4096; 
+	worker_connections 4096;
 	accept_mutex off;
 }
 
@@ -246,16 +246,16 @@ http {
 	server_names_hash_bucket_size 64;
 	default_type application/octet-stream;
 	client_max_body_size 16m;
-	access_log off; 
+	access_log off;
 
 	aio threads;
-	sendfile on; 
+	sendfile on;
 	sendfile_max_chunk 256k;
 
 	tcp_nopush on;
 	tcp_nodelay on;
- 
-	gzip on; 
+
+	gzip on;
 	gzip_disable "MSIE [1-6].(?!.*SV1)";
 	gzip_http_version 1.1;
 	gzip_vary on;
@@ -266,7 +266,7 @@ http {
 	gzip_types text/plain text/css text/xml text/javascript application/json application/x-javascript application/xml application/xml+rss;
 
 	log_format main $remote_addr - $remote_user [$time_local] "$request"  $status $body_bytes_sent "$http_referer"  "$http_user_agent" "$http_x_forwarded_for";
- 
+
 	proxy_connect_timeout 5;
 	proxy_read_timeout 60;
 	proxy_send_timeout 5;
@@ -282,7 +282,7 @@ http {
 	    listen 80 default;
 	    return 404;
 	}
- 
+
 	include vhost/**/*.conf;
 }
 ```
@@ -305,10 +305,10 @@ server {
 server {
 	listen 443 ssl http2;
 	listen [::]:443 ssl http2;
-	
+
 	server_name api.yelinvan.cc;
 	charset utf-8;
-	 
+
 	ssl_certificate <证书的绝对路径>;
 	ssl_certificate_key <签名的绝对路径>;
 	ssl_session_cache shared:SSL:20m;
@@ -316,15 +316,15 @@ server {
 	ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
 	ssl_prefer_server_ciphers on;
 	ssl_ciphers ECDH+AESGCM:ECDH+AES256:ECDH+AES128:DH+3DES:!ADH:!AECDH:!MD5;
-	 
+
 	root <虚拟目录路径>;
-	
+
 	location / {
 		aio threads=default;
 		index index.html <index.php>;
         # proxy_pass http://127.0.0.1:<port>;
 	}
-	  
+
 	# location ~ \.php$ {
 	# 	fastcgi_pass 127.0.0.1:9000;
 	#	<fastcgi_pass unix:php-fpm.sock>;
@@ -361,7 +361,7 @@ PrivateTmp=true
 WantedBy=multi-user.target
 ```
 
-启动nginx
+启动 nginx
 
 ```shell script
 systemctl start nginx
@@ -372,4 +372,3 @@ systemctl start nginx
 ```shell script
 systemctl enable nginx
 ```
-

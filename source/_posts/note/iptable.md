@@ -4,7 +4,7 @@ categories: 手记
 tags: linux
 ---
 
-添加规则，开放端口（例如80端）
+添加规则，开放端口（例如 80 端）
 
 ```shell
 # /sbin/iptables -I INPUT -p tcp --dport 80 -j ACCEPT

@@ -4,7 +4,7 @@ categories: 手记
 tags: nginx
 ---
 
-修改 `sysctl.conf` 对Linux内核参数优化，让 Nginx 更加充分的发挥性能，以下参数需要根据业务逻辑和实际的硬件成本来综合考虑
+修改 `sysctl.conf` 对 Linux 内核参数优化，让 Nginx 更加充分的发挥性能，以下参数需要根据业务逻辑和实际的硬件成本来综合考虑
 
 <!-- more -->
 
@@ -72,13 +72,13 @@ http {
 }
 ```
 
-隐藏X-Powered-By，需要修改 `php.ini`
+隐藏 X-Powered-By，需要修改 `php.ini`
 
 ```conf
 expose_php = Off
 ```
 
-禁止Scrapy等爬虫工具的抓取、禁止指定UA及UA为空的访问、禁止非GET|HEAD|POST方式的抓取
+禁止 Scrapy 等爬虫工具的抓取、禁止指定 UA 及 UA 为空的访问、禁止非 GET|HEAD|POST 方式的抓取
 
 ```conf
 server {

@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "start": "hexo server",
-    "build": "hexo generate",
-    "deploy": "hexo deploy",
+    "deploy": "hexo deploy & python deploy.py",
     "clean": "hexo clean"
   },
   "hexo": {
@@ -24,5 +23,8 @@
     "hexo-renderer-stylus": "^2.0.0",
     "hexo-server": "^2.0.0",
     "hexo-theme-icarus": "^4.1.2"
+  },
+  "devDependencies": {
+    "prettier": "2.2.1"
   }
 }

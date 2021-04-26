@@ -22,7 +22,7 @@ apt-get install libacl1 libacl1-dev libxml2 libxml2-dev libbz2-dev libcurl3 libc
 
 <!-- more -->
 
-> 使用Debian x86版本出现 `GMP` 错误，则需要手动建立软链接
+> 使用 Debian x86 版本出现 `GMP` 错误，则需要手动建立软链接
 
 ```shell script
 ln -s /usr/include/x86_64-linux-gnu/gmp.h /usr/include/gmp.h
@@ -30,7 +30,7 @@ ln -s /usr/include/x86_64-linux-gnu/gmp.h /usr/include/gmp.h
 
 ## 准备编译源码
 
-- [PHP官网](http://php.net/downloads.php) 下载需要的版本源码，建议使用最新稳定版本
+- [PHP 官网](http://php.net/downloads.php) 下载需要的版本源码，建议使用最新稳定版本
 
 将准备好的源码包解压，进入到 `php` 源码目录下
 

@@ -7,7 +7,7 @@ tags: redis
 错误信息
 
 ```shell
-If you get this error Can't save in background: fork: Cannot allocate memory    
+If you get this error Can't save in background: fork: Cannot allocate memory
 it means that your current database is bigger than memory you have.
 ```
 

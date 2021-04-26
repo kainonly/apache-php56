@@ -4,13 +4,13 @@ categories: 手记
 tags: python
 ---
 
-Python 是一个非常实用的工具，在Linux中存在不少应用会依赖于系统默认的 Python，但是在一些老的发行版本中系统默认的 Python 往往版本较低不能兼容一些新的特性，因此需要实现系统默认 Python3 与自定义 Python3.x 的共存共用
+Python 是一个非常实用的工具，在 Linux 中存在不少应用会依赖于系统默认的 Python，但是在一些老的发行版本中系统默认的 Python 往往版本较低不能兼容一些新的特性，因此需要实现系统默认 Python3 与自定义 Python3.x 的共存共用
 
 <!-- more -->
 
 ## 以 Debian 系统为例
 
-首先安装构建Python源代码所需的软件包：
+首先安装构建 Python 源代码所需的软件包：
 
 ```shell
 sudo apt update
@@ -30,7 +30,7 @@ cd Python-3.8.5
 ./configure --enable-optimizations
 ```
 
-运行make开始构建过程，可以增加多线程编译 `-j [CPU核数]` 提速
+运行 make 开始构建过程，可以增加多线程编译 `-j [CPU核数]` 提速
 
 ```shell
 make

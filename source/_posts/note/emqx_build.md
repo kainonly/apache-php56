@@ -1,12 +1,12 @@
 ---
 title: EMQ X 容器持久化
 categories: 手记
-tags: 
+tags:
   - docker
   - emqx
 ---
 
-EMQX容器持久化需要将以下目录挂载处理：
+EMQX 容器持久化需要将以下目录挂载处理：
 
 - /opt/emqx/data
 - /opt/emqx/etc
@@ -15,7 +15,7 @@ EMQX容器持久化需要将以下目录挂载处理：
 
 <!-- more -->
 
-假设为EMQX配置compose编排：
+假设为 EMQX 配置 compose 编排：
 
 ```yaml
 version: "3.7"
@@ -26,7 +26,7 @@ services:
     environment:
       EMQX_NAME: emqx
       EMQX_HOST: 127.0.0.1
-      EMQX_ALLOW_ANONYMOUS: 'false'
+      EMQX_ALLOW_ANONYMOUS: "false"
       EMQX_LISTENER__TCP__EXTERNAL: 1883
       EMQX_LISTENER__WS__EXTERNAL: 8083
       EMQX_DASHBOARD__DEFAULT_USER__LOGIN: root
@@ -60,7 +60,7 @@ services:
     environment:
       EMQX_NAME: emqx
       EMQX_HOST: 127.0.0.1
-      EMQX_ALLOW_ANONYMOUS: 'false'
+      EMQX_ALLOW_ANONYMOUS: "false"
       EMQX_LISTENER__TCP__EXTERNAL: 1883
       EMQX_LISTENER__WS__EXTERNAL: 8083
       EMQX_DASHBOARD__DEFAULT_USER__LOGIN: root
@@ -76,7 +76,7 @@ services:
     #   - ./emqx/log:/opt/emqx/log
 ```
 
-将文件从容器中复制出来，$CONTAINER换成该容器的ID：
+将文件从容器中复制出来，$CONTAINER 换成该容器的 ID：
 
 ```shell
 docker cp $CONTAINER:/opt/emqx/data ./emqx/
@@ -98,4 +98,4 @@ chmod -R 755 ./emqx
 emqx_1             | EMQ X Broker 4.1.4 is running now!
 ```
 
-经测试，为EMQX增加配置后，删除容器再重新创建持久化生效，容器运行正常
+经测试，为 EMQX 增加配置后，删除容器再重新创建持久化生效，容器运行正常

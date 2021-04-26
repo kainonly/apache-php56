@@ -53,7 +53,7 @@ def is_exclude_dir(root_path: pathlib.PurePath, dirname: str) -> bool:
     return root_path.match(dirname + ((size - 1) * '/*' if size > 1 else ''))
 
 
-for root, _, files in os.walk('./'):
+for root, _, files in os.walk('./public'):
     path = pathlib.PurePath(root)
     is_exclude = False
     for exclude_dir in exclude['dirs']:

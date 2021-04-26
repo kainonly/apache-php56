@@ -4,7 +4,7 @@ categories: 手记
 tags: linux
 ---
 
-首先要确认，`/proc/sys/vm/drop_caches`的值为0，手动执行sync命令
+首先要确认，`/proc/sys/vm/drop_caches`的值为 0，手动执行 sync 命令
 
 ```shell
 # sync
@@ -15,5 +15,3 @@ tags: linux
 ```shell
 # echo 3 > /proc/sys/vm/drop_caches
 ```
-
-

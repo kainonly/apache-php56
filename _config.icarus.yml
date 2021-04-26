@@ -12,8 +12,8 @@ head:
     background_color:
     display: standalone
     icons:
-      - src: ''
-        sizes: ''
+      - src: ""
+        sizes: ""
         type:
   open_graph:
     title:
@@ -36,7 +36,7 @@ head:
     author:
     image:
   meta:
-    - ''
+    - ""
 
 navbar:
   menu:
@@ -50,9 +50,9 @@ footer:
   links:
     Download on GitHub:
       icon: fab fa-github
-      url: 'https://github.com/kainonly'
-    '琼ICP备18004473号':
-      url: 'https://beian.miit.gov.cn'
+      url: "https://github.com/kainonly"
+    "琼ICP备18004473号":
+      url: "https://beian.miit.gov.cn"
 
 article:
   highlight:
@@ -63,15 +63,15 @@ article:
   licenses:
     Creative Commons:
       icon: fab fa-creative-commons
-      url: 'https://creativecommons.org/'
-    'CC BY-NC-SA 4.0': 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
+      url: "https://creativecommons.org/"
+    "CC BY-NC-SA 4.0": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
 
 search:
   type: insight
 
 comment:
   type: disqus
-  shortname: 'kains-note'
+  shortname: "kains-note"
 
 sidebar:
   left:
@@ -87,24 +87,22 @@ widgets:
     location: 中国 · 海南
     avatar: /img/avatar.jpg
     avatar_rounded: true
-    follow_link: 'https://github.com/kainonly'
+    follow_link: "https://github.com/kainonly"
   - type: links
     position: left
     links:
-      Ngx Bit: ''
-      Gin: ''
-      Hyperf: ''
-      ThinkPHP: ''
+      ngx-bit: https://github.com/kainonly/ngx-bit
+      hyperf-api-case: https://github.com/kainonly/hyperf-api-case
+      think-api-case: https://github.com/kainonly/think-api-case
+      kain-lab: https://github.com/kain-lab
   - type: categories
     position: left
-
   - type: recent_posts
     position: right
   - type: archives
     position: right
   - type: tags
     position: right
-
 
 plugins:
   animejs: true
@@ -114,7 +112,7 @@ plugins:
     theme: edgeless
     static: false
     position: bottom-left
-    policyLink: 'https://www.cookiesandyou.com/'
+    policyLink: "https://www.cookiesandyou.com/"
   google_analytics:
     tracking_id: G-J0NVPEBDTM
   progressbar: true

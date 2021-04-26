@@ -16,7 +16,7 @@ tags: linux
 anonymous_enable=NO
 ```
 
-对ftp外用户做出限制
+对 ftp 外用户做出限制
 
 ```
 chroot_local_user=YES
@@ -28,25 +28,25 @@ chroot_local_user=YES
 allow_writeable_chroot=YES
 ```
 
-创建FTP用户
+创建 FTP 用户
 
 ```
 useradd -s /sbin/nologin -d /home/website kain
 ```
 
-给kain添加密码
+给 kain 添加密码
 
 ```
 passwd kain
 ```
 
-让防火墙允许21端口
+让防火墙允许 21 端口
 
 ```
 /sbin/iptables -I INPUT -p tcp --dport 21 -j ACCEPT
 ```
 
-重启vsftpd
+重启 vsftpd
 
 ```
 systemctl restart vsftpd

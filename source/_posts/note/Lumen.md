@@ -1,9 +1,9 @@
 ---
 title: Lumen FAQ
 categories: 手记
-tags: 
-    - php
-    - lumen
+tags:
+  - php
+  - lumen
 ---
 
 ## Lumen 增加 Cookie

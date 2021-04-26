@@ -12,7 +12,7 @@ widgets:
     location: 中国 · 海南
     avatar: /img/avatar.jpg
     avatar_rounded: true
-    follow_link: 'https://github.com/kainonly'
+    follow_link: "https://github.com/kainonly"
   - type: toc
     position: left
     index: false
@@ -20,4 +20,3 @@ widgets:
     type: categories
   - type: tags
     position: left
-

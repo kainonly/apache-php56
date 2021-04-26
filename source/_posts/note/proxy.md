@@ -1,10 +1,12 @@
 ---
-title: 终端设置代理 
+title: 终端设置代理
+
 categories: 手记
+
 tags: shell
 ---
 
-## Git客户端设置代理
+## Git 客户端设置代理
 
 使用 Git 执行
 
@@ -25,7 +27,7 @@ git config --global https.proxy http://127.0.0.1:1080
 export http_proxy=http://proxyAddress:port
 ```
 
-如果你用的是ss代理，在当前终端运行以下命令，那么 `wget` `curl` 这类网络命令都会经过ss代理
+如果你用的是 ss 代理，在当前终端运行以下命令，那么 `wget` `curl` 这类网络命令都会经过 ss 代理
 
 ```shell script
 export ALL_PROXY=socks5://127.0.0.1:1080
@@ -40,20 +42,20 @@ export http_proxy="http://localhost:port"
 export https_proxy="http://localhost:port"
 ```
 
-以使用shadowsocks代理为例，ss的代理端口为 `1080` ，那么应该设置为
+以使用 shadowsocks 代理为例，ss 的代理端口为 `1080` ，那么应该设置为
 
 ```shell script
 export http_proxy="socks5://127.0.0.1:1080"
 export https_proxy="socks5://127.0.0.1:1080"
 ```
 
-或者直接设置ALL_PROXY
+或者直接设置 ALL_PROXY
 
 ```shell script
 export ALL_PROXY=socks5://127.0.0.1:1080
 ```
 
-或者通过设置alias简写来简化操作，每次要用的时候输入 `setproxy`，不用了就 `unsetproxy`
+或者通过设置 alias 简写来简化操作，每次要用的时候输入 `setproxy`，不用了就 `unsetproxy`
 
 ```shell script
 alias setproxy="export ALL_PROXY=socks5://127.0.0.1:1080"
@@ -96,7 +98,7 @@ cd .. && rm -rf proxychains-ng
 vim /etc/proxychains.conf
 ```
 
-将 socks4 127.0.0.1 9095 改为（默认的 `socks4 127.0.0.1 9095` 是tor代理，而 `socks5 127.0.0.1 1080` 是 shadowsocks 的代理）
+将 socks4 127.0.0.1 9095 改为（默认的 `socks4 127.0.0.1 9095` 是 tor 代理，而 `socks5 127.0.0.1 1080` 是 shadowsocks 的代理）
 
 ```
 socks5 127.0.0.1 1080
