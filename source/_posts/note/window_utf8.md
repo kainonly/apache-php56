@@ -10,6 +10,8 @@ CMD 设置
 - 2. 在路径 `计算机\HKEY_CURRENT_USER\Console\%SystemRoot%_system32_cmd.exe` 中找到 `CodePage`
 - 3. 数据数值修改为 `0000fde9`
 
+<!-- more -->
+
 PowerShell 设置
 
 - 1. 创建一个PowerShell配置文件，打开PowerShell执行 `New-Item $PROFILE -ItemType File -Force`

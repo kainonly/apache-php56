@@ -20,6 +20,8 @@ POSTGRESQL 参数
 | commit_delay                 | 0      | 事务提交后，日志写到wal log上到wal_buffer写入到磁盘的时间间隔。需要配合commit_sibling  | 是       | 能够一次写入多个事务，减少IO，提高性能                              |
 | commit_siblings              | 5      | 设置触发commit_delay的并发事务数，根据并发事务多少来配置                               | 是       | 减少IO，提高性能                                                    |
 
+<!-- more -->
+
 POSTGRESQL 扩展
 
 | EXTEND NAME | SQL                           |

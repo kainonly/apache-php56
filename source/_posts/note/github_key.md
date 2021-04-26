@@ -4,13 +4,14 @@ categories: 手记
 tags: git
 ---
 
-
 设置 `git` 的 `user.name` 和 `user.email`
 
 ```shell
 # git config --global user.name "kain"
 # git config --global user.email "zhangtqx@vip.qq.com"
 ```
+
+<!-- more -->
 
 生成 `RSA` 密钥对
 

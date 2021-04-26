@@ -20,6 +20,8 @@ yum install -y libacl libacl-devel libxml2 libxml2-devel openssl openssl-devel b
 apt-get install libacl1 libacl1-dev libxml2 libxml2-dev libbz2-dev libcurl3 libcurl3-dev enchant libenchant-dev libjpeg-dev libpng-dev libxpm-dev libfreetype6-dev libgmp-dev libgmp3-dev libmcrypt-dev libtidy-dev libxslt-dev libssl-dev libargon2-0 libargon2-0-dev build-essential libpcre3 libpcre3-dev autoconf zlib1g-dev
 ```
 
+<!-- more -->
+
 > 使用Debian x86版本出现 `GMP` 错误，则需要手动建立软链接
 
 ```shell script

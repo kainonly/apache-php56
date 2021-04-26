@@ -19,6 +19,8 @@ tags:
 # composer dump-autoload --optimize
 ```
 
+<!-- more -->
+
 配置 satis.json
 
 ```json

@@ -11,6 +11,8 @@ ClientAliveInterval 15
 ClientAliveCountMax 45
 ```
 
+<!-- more -->
+
 > ClientAliveInterval 是每隔多少秒，服务器端向客户端发送心跳，ClientAliveCountMax 是多少次心跳无响应之后，断开 Client 连接
 
 然后重启 `sshd` 服务

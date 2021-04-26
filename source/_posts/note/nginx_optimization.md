@@ -6,6 +6,8 @@ tags: nginx
 
 修改 `sysctl.conf` 对Linux内核参数优化，让 Nginx 更加充分的发挥性能，以下参数需要根据业务逻辑和实际的硬件成本来综合考虑
 
+<!-- more -->
+
 ```conf
 # 表示单个进程最大可以打开的句柄数
 fs.file-max = 999999

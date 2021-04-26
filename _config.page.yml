@@ -1,43 +1,11 @@
-# Sidebar configurations.
-# Please be noted that a sidebar is only visible when it has at least one widget
 sidebar:
-  # Left sidebar configurations
   left:
-    # Whether the sidebar sticks to the top when page scrolls
     sticky: true
-  # Right sidebar configurations
   right:
-    # Whether the sidebar sticks to the top when page scrolls
     sticky: false
-# Sidebar widget configurations
-# http://ppoffice.github.io/hexo-theme-icarus/categories/Widgets/
+
 widgets:
-  # Profile widget configurations
-  - position: left
-    type: profile
-    author: Kain
-    author_title: 全栈 & 敏捷架构师
-    location: 中国 · 海南
-    avatar: /img/avatar.jpg
-    avatar_rounded: true
-    follow_link: 'https://github.com/kainonly'
-  # Table of contents widget configurations
-  -
-    type: categories
+  - type: toc
     position: left
-  -
-    # Where should the widget be placed, left sidebar or right sidebar
-    position: left
-    type: toc
-    # Whether to show the index of each heading
-    index: true
-  # Categories widget configurations
-  -
-    # Where should the widget be placed, left sidebar or right sidebar
-    position: left
-    type: categories
-  # Tags widget configurations
-  -
-    # Where should the widget be placed, left sidebar or right sidebar
-    position: left
-    type: tags
+    index: false
+

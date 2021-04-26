@@ -20,6 +20,8 @@ yum install gcc gcc-c++ autoconf automake zlib zlib-devel pcre-devel
 apt install build-essential libpcre3 libpcre3-dev autoconf zlib1g-dev
 ```
 
+<!-- more -->
+
 ### 准备编译源码
 
 - [NGINX官网](http://nginx.org/en/download.html) 下载需要的版本源码

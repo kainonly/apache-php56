@@ -13,6 +13,8 @@ sysctl -w fs.nr_open=2097152
 echo 2097152 > /proc/sys/fs/nr_open
 ```
 
+<!-- more -->
+
 允许当前会话/进程打开文件句柄数:
 
 ```shell

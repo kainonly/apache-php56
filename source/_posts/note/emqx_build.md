@@ -13,6 +13,8 @@ EMQX容器持久化需要将以下目录挂载处理：
 - /opt/emqx/lib
 - /opt/emqx/log
 
+<!-- more -->
+
 假设为EMQX配置compose编排：
 
 ```yaml

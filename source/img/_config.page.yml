@@ -15,9 +15,9 @@ widgets:
     follow_link: 'https://github.com/kainonly'
   - type: toc
     position: left
-    index: true
-  - type: categories
-    position: left
+    index: false
+  - position: left
+    type: categories
   - type: tags
     position: left
 

@@ -3,7 +3,6 @@ title: 终端设置代理
 categories: 手记
 tags: shell
 ---
-
 ### Git客户端设置代理
 
 使用 Git 执行
@@ -12,6 +11,8 @@ tags: shell
 git config --global http.proxy http://127.0.0.1:1080
 git config --global https.proxy http://127.0.0.1:1080
 ```
+
+<!-- more -->
 
 ### Linux 平台
 
