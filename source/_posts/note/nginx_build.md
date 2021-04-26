@@ -6,7 +6,7 @@ tags: nginx
 
 适用于 `centos`、`debain` 与 `ubuntu` 系统进行编译安装与部署
 
-### 安装编译所需开发库
+## 安装编译所需开发库
 
 - 在 `centos` 下执行安装
 
@@ -22,7 +22,7 @@ apt install build-essential libpcre3 libpcre3-dev autoconf zlib1g-dev
 
 <!-- more -->
 
-### 准备编译源码
+## 准备编译源码
 
 - [NGINX官网](http://nginx.org/en/download.html) 下载需要的版本源码
 - [Openssl官网](https://www.openssl.org/source/) 下载版本 `>=1.0.2` 的版本源码
@@ -31,7 +31,7 @@ apt install build-essential libpcre3 libpcre3-dev autoconf zlib1g-dev
 
 将准备好的源码包分别解压，进入到 `nginx` 源码目录下
 
-### 配置安装
+## 配置安装
 
 默认下，可以直接使用执行，但是很多模块是不包含在内的
 
@@ -86,7 +86,7 @@ apt install build-essential libpcre3 libpcre3-dev autoconf zlib1g-dev
 make && make install
 ```
 
-### 环境配置
+## 环境配置
 
 为 `nginx` 新增用户与用户组
 
@@ -115,7 +115,7 @@ nginx: the configuration file /usr/local/nginx/conf/nginx.conf syntax is ok
 nginx: configuration file /usr/local/nginx/conf/nginx.conf test is successful
 ```
 
-### 优化配置
+## 优化配置
 
 > 以下是我个人对 `nginx` 的一些优化与理解，主要针对常用配置合理定义并将虚拟域名分开管理
 
@@ -289,7 +289,7 @@ http {
 
 > 创建一个 `vhost` 目录来管理虚拟域名，`include vhost/**/*.conf;` 就是将该目录引入
 
-### 设置虚拟域名
+## 设置虚拟域名
 
 > 虚拟域名我通常是放在 `vhost` 目录下，定义一个虚拟域名创建一个文件夹(可以将文件夹命名为域名)，其内部大概包含 `site.conf`、`site.crt`、`site.key`(子配置、证书、签名)
 
@@ -339,7 +339,7 @@ server {
 }
 ```
 
-### 加入 Systemctl
+## 加入 Systemctl
 
 创建文件 `/etc/systemd/system/nginx.service`
 

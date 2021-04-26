@@ -8,7 +8,7 @@ Python 是一个非常实用的工具，在Linux中存在不少应用会依赖�
 
 <!-- more -->
 
-### 以 Debian 系统为例
+## 以 Debian 系统为例
 
 首先安装构建Python源代码所需的软件包：
 

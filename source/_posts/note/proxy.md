@@ -3,7 +3,8 @@ title: 终端设置代理
 categories: 手记
 tags: shell
 ---
-### Git客户端设置代理
+
+## Git客户端设置代理
 
 使用 Git 执行
 
@@ -14,9 +15,9 @@ git config --global https.proxy http://127.0.0.1:1080
 
 <!-- more -->
 
-### Linux 平台
+## Linux 平台
 
-#### 方法 1
+### 方法 1
 
 在终端中直接运行命令，这个办法的好处是简单直接，并且影响面很小（只对当前终端有效，退出就不行了）
 
@@ -30,7 +31,7 @@ export http_proxy=http://proxyAddress:port
 export ALL_PROXY=socks5://127.0.0.1:1080
 ```
 
-#### 方法 2
+### 方法 2
 
 把代理服务器地址写入 `.bashrc` 或者 `.zshrc` ，添加下面内容
 
@@ -60,7 +61,7 @@ alias unsetproxy="unset ALL_PROXY"
 alias ip="curl -i http://ip.cn"
 ```
 
-#### 方法 3
+### 方法 3
 
 改相应工具的配置，比如 `apt` 的配置
 
@@ -76,7 +77,7 @@ Acquire::http::Proxy "http://proxyAddress:port"
 
 保存 `apt.conf` 文件即可
 
-#### 方法 4
+### 方法 4
 
 利用 proxychains 在终端使用 socks5 代理，proxychains 安装
 
@@ -106,7 +107,8 @@ socks5 127.0.0.1 1080
 ```
 proxychains4 wget http://xxx.com/xxx.zip
 ```
-### Window 平台
+
+## Window 平台
 
 使用管理员打开 `powershell`，在终端中手动执行
 

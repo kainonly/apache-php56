@@ -6,7 +6,7 @@ tags:
     - docker
 ---
 
-执行
+使用socat转发为2375端口
 
 ```shell
 socat TCP-LISTEN:2375,reuseaddr,fork UNIX-CONNECT:/var/run/docker.sock

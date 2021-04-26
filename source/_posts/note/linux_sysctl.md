@@ -35,7 +35,7 @@ DefaultLimitNOFILE=1048576
 
 `/etc/security/limits.conf` 持久化设置允许用户/进程打开文件句柄数
 
-```
+```shell
 *      soft   nofile      1048576
 *      hard   nofile      1048576
 ```

@@ -8,7 +8,7 @@ Linux 中的 SWAP（交换分区），类似于 Windows 的虚拟内存。系统
 
 <!-- more -->
 
-### 开启 swap
+## 开启 swap
 
 创建用于交换分区的文件
 

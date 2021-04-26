@@ -6,7 +6,7 @@ tags: php
 
 适用于 `centos`、`debain` 与 `ubuntu` 系统进行编译安装与部署
 
-### 安装编译所需开发库
+## 安装编译所需开发库
 
 - 在 `centos` 下执行安装
 
@@ -28,13 +28,13 @@ apt-get install libacl1 libacl1-dev libxml2 libxml2-dev libbz2-dev libcurl3 libc
 ln -s /usr/include/x86_64-linux-gnu/gmp.h /usr/include/gmp.h
 ```
 
-### 准备编译源码
+## 准备编译源码
 
 - [PHP官网](http://php.net/downloads.php) 下载需要的版本源码，建议使用最新稳定版本
 
 将准备好的源码包解压，进入到 `php` 源码目录下
 
-### 配置安装
+## 配置安装
 
 默认下，可以直接使用执行，但是很多模块是不包含在内的
 
@@ -107,7 +107,7 @@ ln -s /usr/include/x86_64-linux-gnu/gmp.h /usr/include/gmp.h
 # make && make install
 ```
 
-### 环境配置
+## 环境配置
 
 到 /usr/local/etc 修改 php-fpm.conf 文件
 

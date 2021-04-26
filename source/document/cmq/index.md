@@ -11,13 +11,13 @@ toc: true
 [![TypeScript](https://img.shields.io/badge/%3C%2F%3E-TypeScript-blue.svg?style=flat-square)](https://www.typescriptlang.org/)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/kainonly/cmq-nodejs-sdk/master/LICENSE)
 
-# 安装
+## 安装
 
 ```shell
 npm install cmq-sdk --save
 ```
 
-# 创建客户端
+## 创建客户端
 
 ```typescript
 import {CMQ} from 'cmq-sdk';
@@ -71,11 +71,11 @@ try {
 }
 ```
 
-# API 文档
+## API 文档
 
 SDK遵循官网接口开发，详细可查看腾讯云CMQ https://cloud.tencent.com/document/api/406/5852
 
-## 创建队列
+### 创建队列
 
 - createQueue(options: CreateQueueOptions)
     - options `CreateQueueOptions`
@@ -94,7 +94,7 @@ const res = await cmq.createQueue({
 });
 ```
 
-## 获取队列列表
+### 获取队列列表
 
 - listQueue(options: ListQueueOptions)
     - options `ListQueueOptions`
@@ -107,7 +107,7 @@ const res = await cmq.createQueue({
 const res = await cmq.listQueue({});
 ```
 
-## 获取队列属性
+### 获取队列属性
 
 - getQueueAttributes(options: GetQueueAttributesOptions)
     - options `GetQueueAttributesOptions`
@@ -120,7 +120,7 @@ const res = await cmq.getQueueAttributes({
 });
 ```
 
-## 修改队列属性
+### 修改队列属性
 
 - setQueueAttributes(options: SetQueueAttributesOptions)
     - options `SetQueueAttributesOptions`
@@ -140,7 +140,7 @@ const res = await cmq.setQueueAttributes({
 });
 ```
 
-## 删除队列
+### 删除队列
 
 - deleteQueue(options: DeleteQueueOptions)
     - options `DeleteQueueOptions`
@@ -153,7 +153,7 @@ const res = await cmq.deleteQueue({
 });
 ```
 
-## 回溯队列
+### 回溯队列
 
 - rewindQueue(options: RewindQueueOptions)
     - options `RewindQueueOptions`
@@ -170,7 +170,7 @@ const res = await cmq.rewindQueue({
 });
 ```
 
-## 发送消息
+### 发送消息
 
 - sendMessage(options: SendMessageOptions)
     - options `SendMessageOptions`
@@ -188,7 +188,7 @@ const res = await cmq.sendMessage({
 });
 ```
 
-## 批量发送消息
+### 批量发送消息
 
 - batchSendMessage(options: BatchSendMessageOptions)
     - options `BatchSendMessageOptions`
@@ -207,7 +207,7 @@ const res = await cmq.batchSendMessage({
 });
 ```
 
-## 消费消息
+### 消费消息
 
 - receiveMessage(options: ReceiveMessageOptions)
     - options `ReceiveMessageOptions`
@@ -221,7 +221,7 @@ const res = await cmq.receiveMessage({
 });
 ```
 
-## 批量消费消息
+### 批量消费消息
 
 - batchReceiveMessage(options: BatchReceiveMessageOptions)
     - options `BatchReceiveMessageOptions`
@@ -237,7 +237,7 @@ const res = await cmq.batchReceiveMessage({
 });
 ```
 
-## 删除消息
+### 删除消息
 
 - deleteMessage(options: DeleteMessageOptions)
     - options `DeleteMessageOptions`
@@ -256,7 +256,7 @@ const res2 = await cmq.deleteMessage({
 });
 ```
 
-## 批量删除消息
+### 批量删除消息
 
 - batchDeleteMessage(options: BatchDeleteMessageOptions)
     - options `BatchDeleteMessageOptions`
@@ -277,7 +277,7 @@ const res2 = await cmq.batchDeleteMessage({
 });
 ```
 
-## 创建主题 
+### 创建主题 
 
 - createTopic(options: CreateTopicOptions)
     - options `CreateTopicOptions`
@@ -292,7 +292,7 @@ const res = await cmq.createTopic({
 });
 ```
 
-## 修改主题属性
+### 修改主题属性
 
 - setTopicAttributes(options: SetTopicAttributesOptions):
     - options `SetTopicAttributesOptions`
@@ -307,7 +307,7 @@ const res = await cmq.setTopicAttributes({
 });
 ```
 
-## 获取主题列表
+### 获取主题列表
 
 - listTopic(options: ListTopicOptions)
     - options `ListTopicOptions`
@@ -320,7 +320,7 @@ const res = await cmq.setTopicAttributes({
 const res = await cmq.listTopic({});
 ```
 
-## 获取主题属性
+### 获取主题属性
 
 - getTopicAttributes(options: GetTopicAttributesOptions)
     - options `GetTopicAttributesOptions`
@@ -333,7 +333,7 @@ const res = await cmq.getTopicAttributes({
 });
 ```
 
-## 删除主题
+### 删除主题
 
 - deleteTopic(options: DeleteTopicOptions)
     - options `DeleteTopicOptions`
@@ -346,7 +346,7 @@ const res = await cmq.deleteTopic({
 });
 ```
 
-## 发布消息
+### 发布消息
 
 - publishMessage(options: PublishMessageOptions)
     - options `PublishMessageOptions`
@@ -365,7 +365,7 @@ const res = await cmq.publishMessage({
 });
 ```
 
-## 批量发布消息 
+### 批量发布消息 
 
 - batchPublishMessage(options: BatchPublishMessageOptions)
     - options `BatchPublishMessageOptions`
@@ -385,7 +385,7 @@ const res = await cmq.batchPublishMessage({
 });
 ```
 
-## 创建订阅 
+### 创建订阅 
 
 - subscribe(options: SubscribeOptions)
     - options `SubscribeOptions`
@@ -409,7 +409,7 @@ const res = await cmq.subscribe({
 });
 ```
 
-## 获取订阅列表
+### 获取订阅列表
 
 - listSubscriptionByTopic(options: ListSubscriptionByTopicOptions)
     - options `ListSubscriptionByTopicOptions`
@@ -425,7 +425,7 @@ const res = await cmq.listSubscriptionByTopic({
 });
 ```
 
-## 修改订阅属性
+### 修改订阅属性
 
 - setSubscriptionAttributes(options: SetSubscriptionAttributesOptions)
     - options `SetSubscriptionAttributesOptions`
@@ -445,7 +445,7 @@ const res = await cmq.setSubscriptionAttributes({
 });
 ```
 
-## 删除订阅 
+### 删除订阅 
 
 - unsubscribe(options: UnsubscribeOptions)
     - options `UnsubscribeOptions`
@@ -460,7 +460,7 @@ const res = await cmq.unsubscribe({
 });
 ```
 
-## 获取订阅属性
+### 获取订阅属性
 
 - getSubscriptionAttributes(options: GetSubscriptionAttributesOptions)
     - options `GetSubscriptionAttributesOptions`
@@ -475,7 +475,7 @@ const res = await cmq.getSubscriptionAttributes({
 });
 ```
 
-## 清空订阅标签
+### 清空订阅标签
 
 - clearSubscriptionFilterTags(options: ClearSubscriptionFilterTagsOptions)
     - options `ClearSubscriptionFilterTagsOptions`

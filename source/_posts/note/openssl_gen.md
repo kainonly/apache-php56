@@ -8,7 +8,7 @@ OpenSSL是为网络通信提供安全及数据完整性的一种安全协议，�
 
 <!-- more -->
 
-### 生成 RSA 密钥
+## 生成 RSA 密钥
 
 生成私钥
 
@@ -28,7 +28,7 @@ openssl pkcs8 -topk8 -inform PEM -in rsa_private_key.pem -outform PEM –nocrypt
 openssl rsa -in rsa_private_key.pem -pubout -out rsa_public_key.pem
 ```
 
-### 生成 ECC 密钥
+## 生成 ECC 密钥
 
 生成私密
 
@@ -50,7 +50,7 @@ openssl req -new -sha256 -key domain.key -out domain_csr.txt
 openssl ec -in domain.key -pubout -out pubkey.pem
 ```
 
-### 签发证书
+## 签发证书
 
 生成签名
 

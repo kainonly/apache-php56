@@ -8,7 +8,7 @@ OPcache是PHP中的Zend扩展，可以大大提升PHP的性能。 OPcache 通过
 
 <!-- more -->
 
-### OPcache 配置
+## OPcache 配置
 
 接下来，我们需要在 PHP 的配置文件中启用 OPcache（默认是关闭的）
 
