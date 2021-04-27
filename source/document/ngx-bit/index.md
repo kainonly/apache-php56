@@ -2129,9 +2129,9 @@ BitSupportService 作为附加的功能支持，以下示例中 `support` 为 `B
 
 - setBreadcrumb(...breadcrumb: BreadcrumbOption[])
   - breadcrumb `BreadcrumbOption[]` 面包屑参数
-    - **$.name** `any` 面包屑名称
-    - **$.key** `string` 路由标签
-    - **$.router** `0 | 1` 是否为路由
+    - $.name `any` 面包屑名称
+    - $.key `string` 路由标签
+    - $.router `0 | 1` 是否为路由
 
 ```typescript
 const data: BreadcrumbOption[] = [

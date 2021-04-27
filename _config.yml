@@ -37,6 +37,7 @@ future: true
 
 highlight:
   enable: true
+  auto_detect: true
   line_number: true
   tab_replace:
 
