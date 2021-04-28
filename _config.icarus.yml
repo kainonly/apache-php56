@@ -4,17 +4,6 @@ logo: /img/logo.png
 
 head:
   favicon: /img/favicon.svg
-  manifest:
-    name: kain's notes
-    short_name: kain-notes
-    start_url: /
-    theme_color: #f7f7f7
-    background_color: #f7f7f7
-    display: standalone
-    icons:
-      - src: /img/logo.png
-        sizes: "128x128"
-        type: image/png
 
 navbar:
   menu:
@@ -29,12 +18,10 @@ footer:
     Download on GitHub:
       icon: fab fa-github
       url: "https://github.com/kainonly"
-    "琼ICP备18004473号":
-      url: "https://beian.miit.gov.cn"
 
 article:
   highlight:
-    theme: atom-one-light
+    theme: vs2015
     clipboard: true
     fold: unfolded
   readtime: true
@@ -47,9 +34,9 @@ article:
 search:
   type: insight
 
-comment:
-  type: disqus
-  shortname: "kains-note"
+#comment:
+#  type: disqus
+#  shortname: "kains-note"
 
 sidebar:
   left:
@@ -98,4 +85,4 @@ plugins:
 providers:
   cdn: jsdelivr
   fontcdn: google
-  iconcdn: https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.min.css
+  iconcdn: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.css

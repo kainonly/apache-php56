@@ -39,13 +39,9 @@ highlight:
   enable: true
   auto_detect: true
   line_number: true
-  tab_replace:
-
-prismjs:
-  enable: true
-  preprocess: true
-  line_number: true
-  tab_replace: ""
+  tab_replace: ''
+  wrap: true
+  hljs: false
 
 default_category: uncategorized
 category_map: null
