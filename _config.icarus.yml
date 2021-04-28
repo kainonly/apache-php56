@@ -1,0 +1,88 @@
+version: 4.0.0
+variant: default
+logo: /img/logo.png
+
+head:
+  favicon: /img/favicon.svg
+
+navbar:
+  menu:
+    主页: /
+    手册: /document
+    分类: /categories
+    标签: /tags
+    归档: /archives
+
+footer:
+  links:
+    Download on GitHub:
+      icon: fab fa-github
+      url: "https://github.com/kainonly"
+
+article:
+  highlight:
+    theme: vs2015
+    clipboard: true
+    fold: unfolded
+  readtime: true
+  licenses:
+    Creative Commons:
+      icon: fab fa-creative-commons
+      url: "https://creativecommons.org/"
+    "CC BY-NC-SA 4.0": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+
+search:
+  type: insight
+
+comment:
+  type: disqus
+  shortname: kains-note
+
+sidebar:
+  left:
+    sticky: false
+  right:
+    sticky: false
+
+widgets:
+  - type: profile
+    position: left
+    author: Kain
+    author_title: 全栈 & 敏捷架构师
+    location: 中国 · 海南
+    avatar: /img/avatar.jpg
+    avatar_rounded: true
+    follow_link: "https://github.com/kainonly"
+  - type: links
+    position: left
+    links:
+      ngx-bit: https://github.com/kainonly/ngx-bit
+      hyperf-api-case: https://github.com/kainonly/hyperf-api-case
+      think-api-case: https://github.com/kainonly/think-api-case
+      kain-lab: https://github.com/kain-lab
+  - type: categories
+    position: left
+  - type: recent_posts
+    position: right
+  - type: archives
+    position: right
+  - type: tags
+    position: right
+
+plugins:
+  animejs: true
+  back_to_top: true
+  cookie_consent:
+    type: info
+    theme: edgeless
+    static: false
+    position: bottom-left
+    policyLink: "https://www.cookiesandyou.com/"
+  google_analytics:
+    tracking_id: G-J0NVPEBDTM
+  progressbar: true
+
+providers:
+  cdn: jsdelivr
+  fontcdn: google
+  iconcdn: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.css
