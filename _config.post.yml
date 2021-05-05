@@ -7,7 +7,7 @@ sidebar:
 widgets:
   - type: toc
     position: left
-    index: true
+    index: false
   - type: categories
     position: left
   - type: tags
