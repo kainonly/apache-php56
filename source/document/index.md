@@ -1,14 +1,6 @@
 ---
 title: 技术手册
 widgets:
-  - type: profile
-    position: left
-    author: Kain
-    author_title: 全栈 & 敏捷架构师
-    location: 中国 · 海南
-    avatar: /img/avatar.jpg
-    avatar_rounded: true
-    follow_link: "https://github.com/kainonly"
   - type: links
     position: left
     links:
@@ -19,11 +11,7 @@ widgets:
   - type: categories
     position: left
   - type: recent_posts
-    position: right
-  - type: archives
-    position: right
-  - type: tags
-    position: right
+    position: left
 ---
 
 - [易用的 Angular 辅助层框架](https://github.com/kainonly/ngx-bit)
