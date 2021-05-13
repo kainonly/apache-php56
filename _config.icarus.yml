@@ -8,7 +8,7 @@ head:
 navbar:
   menu:
     Home: /
-    Document: /document
+    Document: https://doc.kainonly.com
     Categories: /categories
     Tags: /tags
     Archives: /archives
