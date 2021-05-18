@@ -7,11 +7,11 @@ head:
 
 navbar:
   menu:
-    Home: /
-    Document: https://doc.kainonly.com
-    Categories: /categories
-    Tags: /tags
-    Archives: /archives
+    首页: /
+    技术文档: https://doc.kainonly.com
+    分类: /categories
+    标签: /tags
+    归档: /archives
   links:
     GitHub:
       icon: fab fa-github
