@@ -1,6 +1,6 @@
 ---
 title: 什么是 QPS、响应时间、吞吐量
-categories: 涨知识
+categories: 手记
 ---
 
 ## 峰值时间每秒请求数(QPS)

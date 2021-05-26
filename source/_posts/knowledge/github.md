@@ -1,6 +1,6 @@
 ---
 title: Github 常出现的缩写含义
-categories: 涨知识
+categories: 手记
 ---
 
 这里整理一下经常看到 Github 的缩写都是什么含义

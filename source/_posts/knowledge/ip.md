@@ -1,6 +1,6 @@
 ---
 title: IP 斜杠后数字的含义
-categories: 涨知识
+categories: 手记
 ---
 
 在设置安全组与配置路由时经常见到 ip 地址后面带一个斜杠，例如：

@@ -1,6 +1,6 @@
 ---
 title: 产品开发各阶段缩写
-categories: 涨知识
+categories: 手记
 ---
 
 **EVT(Engineering Verification Test) 工程验证测试**
