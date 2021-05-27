@@ -50,22 +50,16 @@ openssl req -new -sha256 -key domain.key -out domain_csr.txt
 openssl ec -in domain.key -pubout -out pubkey.pem
 ```
 
-## 签发证书
+## 签发私有证书
 
-生成签名
-
-```shell script
-openssl genrsa -des3 -out root.key 1024
-```
-
-清除口令
+生成私钥
 
 ```shell script
-openssl rsa -in server.key -out server.key
+openssl genrsa > cert.key 
 ```
 
 生成 CA 证书
 
 ```shell script
-openssl req -new -x509 -key root.key -out root.crt -days 365 -config openssl.conf
+openssl req -new -x509 -key cert.key > cert.pem
 ```
