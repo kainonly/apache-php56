@@ -1,12 +1,8 @@
 ---
-title: MySQL 用户操作
+title: MySQL 创建用户与基本授权
 categories: 数据库
 tags: mysql
 ---
-
-一些 MySQL 操作用户的常用 SQL
-
-<!-- more -->
 
 ## 创建用户
 
@@ -15,6 +11,8 @@ tags: mysql
 ```sql
 CREATE USER 'jeffrey'@'localhost' IDENTIFIED BY 'password';
 ```
+
+<!-- more -->
 
 完整的语句：
 
