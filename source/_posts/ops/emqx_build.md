@@ -1,9 +1,7 @@
 ---
 title: EMQ X 容器持久化
 categories: 运维技术
-tags:
-  - docker
-  - emqx
+tags: emqx
 ---
 
 EMQX 容器持久化需要将以下目录挂载处理：
