@@ -73,3 +73,8 @@ tag_generator:
   per_page: 10
 
 theme: icarus
+
+deploy:
+  - type: git
+    repo: git@github.com:kainonly/kainonly.github.io.git
+    branch: main
