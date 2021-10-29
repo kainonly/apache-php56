@@ -14,4 +14,7 @@ RUN docker-php-ext-install \
     sockets \
     xmlrpc \
     zip \
-    opcache
+    opcache \
+    \
+    && pecl install redis \
+    && docker-php-ext-enable redis
